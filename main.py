@@ -124,7 +124,7 @@ def trigger_category_scrape(db: Session = Depends(get_db)):
     for idx, parent_id in enumerate(parent_ids):
         # Pick a device that is not failed, prefer those with status True, then oldest update_time
         devices = db.query(DeviceModel).filter(
-            DeviceModel.is_failed == False
+            DeviceModel.is_faild == False
         ).order_by(DeviceModel.status.desc(), DeviceModel.update_time.asc()).all()
         
         if not devices:
@@ -158,7 +158,7 @@ def trigger_category_scrape(db: Session = Depends(get_db)):
                 db.commit()
             
             if success:
-                device.number_of_attempts += (num_children * 2)
+                device.number_of_attemps += (num_children * 2)
                 device.status = True
             else:
                 device.status = False
@@ -166,7 +166,7 @@ def trigger_category_scrape(db: Session = Depends(get_db)):
             
         except Exception as e:
             logging.error(f"Error scraping parent_id {parent_id} with device {device.id}: {e}")
-            device.is_failed = True
+            device.is_faild = True
             device.status = False
             device.failed_time = datetime.now(UTC)
             db.commit()  

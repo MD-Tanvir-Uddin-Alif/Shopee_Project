@@ -37,6 +37,7 @@ def Product_Scrape_by_Category(categories, cookies_json):
         "Chrome/118.0.5993.90 Safari/537.36"
     )
     all_products_data = []
+    success = True  # Assume success unless an error occurs
    
     try:
         with sync_playwright() as p:
@@ -118,7 +119,8 @@ def Product_Scrape_by_Category(categories, cookies_json):
                 logging.info(f"Successfully opened {site_url}")
             except Exception as e:
                 logging.error(f"Failed to open {site_url}: {e}")
-                return all_products_data # Early return on failure
+                success = False
+                return all_products_data, success # Early return on failure
             
             # Use provided cookies_json (list of dicts) instead of loading from file
             logging.info("Using provided cookies from device")
@@ -129,6 +131,7 @@ def Product_Scrape_by_Category(categories, cookies_json):
                     logging.info("Successfully parsed cookies JSON string into list")
                 except json.JSONDecodeError as e:
                     logging.error(f"Failed to parse cookies JSON: {e}")
+                    success = False
                     cookies = []
             
             current_host = urlparse(page.url).hostname
@@ -159,12 +162,14 @@ def Product_Scrape_by_Category(categories, cookies_json):
                     valid_cookies.append(cookie_payload)
                 except Exception as e:
                     logging.error(f"Error processing cookie: {e}")
+                    success = False
             if valid_cookies:
                 try:
                     context.add_cookies(valid_cookies)
                     logging.info(f"Added {len(valid_cookies)} cookies.")
                 except Exception as e:
                     logging.error(f"Error adding cookies: {e}")
+                    success = False
             else:
                 logging.warning("No valid cookies added to the context.")
             try:
@@ -172,6 +177,7 @@ def Product_Scrape_by_Category(categories, cookies_json):
                 logging.info("Page reloaded successfully")
             except Exception as e:
                 logging.error(f"Error reloading page: {e}")
+                success = False
             time.sleep(4)
             # Try closing popup (same xpath as before)
             try:
@@ -185,79 +191,89 @@ def Product_Scrape_by_Category(categories, cookies_json):
                 logging.info("Simulated human behavior on home page")
             except Exception as e:
                 logging.error(f"Error simulating human behavior: {e}")
-           
+                success = False
+            
             for cat in categories:
-                parent_catId = cat["parent_catid"]
-                cat_Id = cat["catid"]
-                for i in range(2):
-                    api_requests = [] # Clear for each page to capture only current page's APIs
-                    page_url = f"https://shopee.sg/abc-cat.{parent_catId}.{cat_Id}?page={i}&sortBy=sales"
-                    logging.info(f"Opening category page: {page_url}")
-                    try:
-                        page.goto(page_url, wait_until="networkidle")
-                        logging.info(f"Successfully opened {page_url}")
-                    except Exception as e:
-                        logging.error(f"Failed to open {page_url}: {e}")
-                        continue
-                   
-                    play_simulate_human_behavior(page, random.randint(1, 7))
-                    # Extract product data
-                    products_data = []
-                    found_products = False
-                    for entry in api_requests:
+                try:
+                    parent_catId = cat["parent_catid"]
+                    cat_Id = cat["catid"]
+                    for i in range(2):
+                        api_requests = [] # Clear for each page to capture only current page's APIs
+                        page_url = f"https://shopee.sg/abc-cat.{parent_catId}.{cat_Id}?page={i}&sortBy=sales"
+                        logging.info(f"Opening category page: {page_url}")
                         try:
-                            data = entry["response"]
-                            if isinstance(data, dict) and 'items' in data:
-                                for item_wrapper in data['items']:
-                                    if 'item_basic' in item_wrapper:
-                                        item = item_wrapper['item_basic']
-                                       
-                                        # Extract the data you need, adding category info
-                                        product_info = {
-                                            "parent_category_id": parent_catId,
-                                            "child_category_id": cat_Id,
-                                            "price": item.get('price', 0) / 100000, # Convert to actual price
-                                            "price_before_discount": item.get('price_before_discount', 0) / 100000,
-                                            "raw_discount": item.get('raw_discount', 0),
-                                            "discount_percentage": item.get('discount', '0%'),
-                                            "name": item.get('name', ''),
-                                            "image": f"https://down-sg.img.susercontent.com/file/{item.get('image', '')}",
-                                            "sold": item.get('sold', 0),
-                                            "historical_sold": item.get('historical_sold', 0),
-                                            "shop_name": item.get('shop_name', ''),
-                                            "item_id": item.get('itemid', ''),
-                                            "shop_id": item.get('shopid', ''),
-                                            "rating_star": item.get('item_rating', {}).get('rating_star', 0),
-                                            "rating_count": sum(item.get('item_rating', {}).get('rating_count', [0])),
-                                            "shop_location": item.get('shop_location', ''),
-                                            "stock": item.get('stock', 0),
-                                        }
-                                       
-                                        products_data.append(product_info)
-                               
-                                found_products = True
-                                logging.info(f"Extracted {len(products_data)} products from {page_url}")
+                            page.goto(page_url, wait_until="networkidle")
+                            logging.info(f"Successfully opened {page_url}")
                         except Exception as e:
-                            logging.error(f"Error processing API entry for {entry.get('url', 'unknown')}: {e}")
-                    if found_products and products_data:
-                        all_products_data.extend(products_data)
-                    else:
-                        logging.warning(f"No products found for page: {page_url}")
-                    # Debug info: if no API requests were captured
-                    if not api_requests:
-                        logging.warning("No API requests captured for 'search_items'.")
-                        try:
-                            logging.info(f"Total network requests: {len(context.requests)}")
-                            # Log the first 20 requests to help debugging
-                            for req in context.requests[:20]:
-                                try:
-                                    logging.info(f" - {req.url}")
-                                except Exception:
-                                    pass
-                        except Exception as e:
-                            logging.error(f"Error logging network requests: {e}")
+                            logging.error(f"Failed to open {page_url}: {e}")
+                            success = False
+                            continue
+                       
+                        play_simulate_human_behavior(page, random.randint(1, 7))
+                        # Extract product data
+                        products_data = []
+                        found_products = False
+                        for entry in api_requests:
+                            try:
+                                data = entry["response"]
+                                if isinstance(data, dict) and 'items' in data:
+                                    for item_wrapper in data['items']:
+                                        if 'item_basic' in item_wrapper:
+                                            item = item_wrapper['item_basic']
+                                           
+                                            # Extract the data you need, adding category info
+                                            product_info = {
+                                                "parent_category_id": parent_catId,
+                                                "child_category_id": cat_Id,
+                                                "price": item.get('price', 0) / 100000, # Convert to actual price
+                                                "price_before_discount": item.get('price_before_discount', 0) / 100000,
+                                                "raw_discount": item.get('raw_discount', 0),
+                                                "discount_percentage": item.get('discount', '0%'),
+                                                "name": item.get('name', ''),
+                                                "image": f"https://down-sg.img.susercontent.com/file/{item.get('image', '')}",
+                                                "sold": item.get('sold', 0),
+                                                "historical_sold": item.get('historical_sold', 0),
+                                                "shop_name": item.get('shop_name', ''),
+                                                "item_id": item.get('itemid', ''),
+                                                "shop_id": item.get('shopid', ''),
+                                                "rating_star": item.get('item_rating', {}).get('rating_star', 0),
+                                                "rating_count": sum(item.get('item_rating', {}).get('rating_count', [0])),
+                                                "shop_location": item.get('shop_location', ''),
+                                                "stock": item.get('stock', 0),
+                                            }
+                                           
+                                            products_data.append(product_info)
+                                   
+                                    found_products = True
+                                    logging.info(f"Extracted {len(products_data)} products from {page_url}")
+                            except Exception as e:
+                                logging.error(f"Error processing API entry for {entry.get('url', 'unknown')}: {e}")
+                                success = False
+                        if found_products and products_data:
+                            all_products_data.extend(products_data)
+                        else:
+                            logging.warning(f"No products found for page: {page_url}")
+                        # Debug info: if no API requests were captured
+                        if not api_requests:
+                            logging.warning("No API requests captured for 'search_items'.")
+                            try:
+                                logging.info(f"Total network requests: {len(context.requests)}")
+                                # Log the first 20 requests to help debugging
+                                for req in context.requests[:20]:
+                                    try:
+                                        logging.info(f" - {req.url}")
+                                    except Exception:
+                                        pass
+                            except Exception as e:
+                                logging.error(f"Error logging network requests: {e}")
+                                success = False
+                except Exception as e:
+                    logging.error(f"Failed to scrape subcategory {cat_Id} under parent {parent_catId}: {e}")
+                    success = False
+                    continue  # Continue to next subcategory
     except Exception as e:
         logging.error(f"Unexpected error in Product_Scrape_by_Category: {e}")
+        success = False
    
     finally:
         try:
@@ -266,5 +282,6 @@ def Product_Scrape_by_Category(categories, cookies_json):
             logging.info("Browser and context closed")
         except Exception as e:
             logging.error(f"Error closing browser/context: {e}")
+            success = False
    
-    return all_products_data
+    return all_products_data, success

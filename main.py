@@ -120,20 +120,18 @@ def trigger_category_scrape(db: Session = Depends(get_db)):
     parents = db.query(ProductMainCategoryModel.category_id).all()
     parent_ids = [row[0] for row in parents]
     total_saved = 0
-    today_midnight = datetime.now(UTC).replace(hour=0, minute=0, second=0, microsecond=0)
    
     for idx, parent_id in enumerate(parent_ids):
-        # Pick a device that hasn't been scraped today (update_time < today_midnight) and is not failed
+        # Pick a device that is not failed, prefer those with status True, then oldest update_time
         devices = db.query(DeviceModel).filter(
-            DeviceModel.is_faild == False,
-            DeviceModel.update_time < today_midnight
-        ).order_by(DeviceModel.update_time.asc()).all()
+            DeviceModel.is_failed == False
+        ).order_by(DeviceModel.status.desc(), DeviceModel.update_time.asc()).all()
         
         if not devices:
             logging.warning(f"No available devices for parent_id {parent_id}. Skipping.")
             continue  
         
-        device = devices[0]  # Pick the oldest (earliest update_time)
+        device = devices[0]  # Pick the top one based on ordering
         logging.info(f"Using device {device.id} for parent_id {parent_id}")
         
         data = db.query(ProductChildCategoryModel.parent_category_id, ProductChildCategoryModel.category_id).filter(
@@ -143,7 +141,7 @@ def trigger_category_scrape(db: Session = Depends(get_db)):
         num_children = len(result)
         
         try:
-            products = Product_Scrape_by_Category(result, device.cookies)
+            products, success = Product_Scrape_by_Category(result, device.cookies)
             
             for prod in products:
                 db_product = ProductModel(**prod)
@@ -159,14 +157,19 @@ def trigger_category_scrape(db: Session = Depends(get_db)):
                 parent.scraped_at = datetime.now(UTC)
                 db.commit()
             
-            device.number_of_attempts += (num_children * 2)
+            if success:
+                device.number_of_attempts += (num_children * 2)
+                device.status = True
+            else:
+                device.status = False
             db.commit()  
             
         except Exception as e:
             logging.error(f"Error scraping parent_id {parent_id} with device {device.id}: {e}")
             device.is_failed = True
+            device.status = False
             device.failed_time = datetime.now(UTC)
-            db.commit()  # Triggers onupdate for update_time and failed_time (but failed_time is set manually)
+            db.commit()  
             continue
         
         if idx < len(parent_ids) - 1:

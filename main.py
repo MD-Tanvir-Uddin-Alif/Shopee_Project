@@ -2,7 +2,7 @@
 #  lybries
 #----------------------------------------
 from databse_config import Base, engine, get_db
-from fastapi import FastAPI, Depends,HTTPException, status
+from fastapi import FastAPI, Depends, status, Body
 from fastapi.responses import JSONResponse
 from sqlalchemy.orm import Session
 from datetime import datetime, UTC
@@ -113,10 +113,10 @@ def trigger_category_scrape(db: Session = Depends(get_db)):
 #--------------------------------------------------
 #  add info to Device Model
 #--------------------------------------------------
-@app.post('/add-device-info/{device_namae}/{email}/{password}/{cookies}')
+@app.post('/add-device-info/{device_namae}/')
 def add_device_info(
     device_name: str,
-    cookies: str,
+    cookies: dict | list = Body(...),
     email: str| None=None,
     password: str | None=None,
     db: Session=Depends(get_db)
@@ -129,7 +129,7 @@ def add_device_info(
         existing_device.email=email
         existing_device.password=password
         existing_device.update_time = datetime.now(UTC)
-        db.commit(existing_device)
+        db.commit()
         db.refresh(existing_device)
         return{'message':"device info updated", 'data':existing_device}
     else:

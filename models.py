@@ -1,4 +1,4 @@
-from sqlalchemy import Integer, String, Column, Boolean, DateTime, BigInteger, Float
+from sqlalchemy import Integer, String, Column, Boolean, DateTime, BigInteger, Float, JSON
 from databse_config import Base
 from datetime import datetime, UTC, timezone
 
@@ -74,7 +74,7 @@ class DeviceModel(Base):
     device_name = Column(String)
     email = Column(String)
     password = Column(String)
-    cookies = Column(String)
+    cookies = Column(JSON)
     number_of_attemps = Column(Integer, default=0)
     is_faild = Column(Boolean, default=False)
     failed_time = Column(DateTime(timezone=True), default=datetime.now(UTC), onupdate=datetime.now(UTC))

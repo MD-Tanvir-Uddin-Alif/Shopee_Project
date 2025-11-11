@@ -127,7 +127,6 @@ def trigger_category_scrape(db: Session = Depends(get_db)):
     total_saved = 0
    
     for idx, parent_id in enumerate(parent_ids):
-        # Pick a device that is not failed, prefer those with status True, then oldest update_time
         devices = db.query(DeviceModel).filter(
             DeviceModel.is_faild == False
         ).order_by(DeviceModel.status.desc(), DeviceModel.update_time.asc()).all()
@@ -242,6 +241,11 @@ def get_device_status(db: Session = Depends(get_db)):
         'failed': failed,
         'devices': device_info
     }
+
+
+
+
+
 #--------------------------------------------------
 #  add info to Device Model
 #--------------------------------------------------
@@ -260,6 +264,12 @@ def add_device_info(device_name: str , email: str, password: str, cookies: dict 
     return {'message':"new device added", 'data':new_device}
 
 
+
+
+
+#------------------------------------
+# Update a single device info
+#-------------------------------------
 @app.put('/update-device-info/{device_id}/')
 def update_device_info(
     device_id: int,

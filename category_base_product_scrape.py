@@ -31,16 +31,15 @@ def get_expiry(cookie):
                 pass
     return None
 
-def Product_Scrape_by_Category(categories):
+def Product_Scrape_by_Category(categories, cookies_json):
     # Example stealth User-Agent (realistic)
     user_agent = (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
         "AppleWebKit/537.36 (KHTML, like Gecko) "
         "Chrome/118.0.5993.90 Safari/537.36"
     )
-
     all_products_data = []
-    
+   
     try:
         with sync_playwright() as p:
             browser = p.chromium.launch(
@@ -52,17 +51,15 @@ def Product_Scrape_by_Category(categories):
                     "--disable-dev-shm-usage"
                 ]
             )
-
             # Create context with extra stealthy options
             context = browser.new_context(
                 user_agent=user_agent,
                 viewport={"width": 1920, "height": 1080},
                 locale="en-US",
-                timezone_id="Asia/Dhaka",   # change if you prefer UTC
+                timezone_id="Asia/Dhaka", # change if you prefer UTC
                 ignore_https_errors=True,
                 java_script_enabled=True,
             )
-
             # Additional init scripts to reduce fingerprinting
             # - hide navigator.webdriver
             # - set navigator.languages
@@ -71,13 +68,10 @@ def Product_Scrape_by_Category(categories):
                 """
                 // navigator.webdriver removal
                 Object.defineProperty(navigator, 'webdriver', {get: () => undefined});
-
                 // mock languages
                 Object.defineProperty(navigator, 'languages', {get: () => ['en-US','en']});
-
                 // mock plugins
                 Object.defineProperty(navigator, 'plugins', {get: () => [1,2,3,4,5]});
-
                 // mock permissions.query to avoid detection
                 const origQuery = window.navigator.permissions && window.navigator.permissions.query;
                 if (origQuery) {
@@ -87,14 +81,11 @@ def Product_Scrape_by_Category(categories):
                             origQuery(parameters)
                     );
                 }
-                """ 
+                """
             )
-
             page = context.new_page()
-
             # Intercept network responses for Shopee API
             api_requests = []
-
             def capture_response(response):
                 """Capture Shopee API JSON responses"""
                 try:
@@ -108,26 +99,20 @@ def Product_Scrape_by_Category(categories):
                             except json.JSONDecodeError as json_err:
                                 logging.error(f"JSON decode error for {response.url}: {json_err}")
                                 json_data = {"raw_text": body_text}
-
                             entry = {
                                 "url": response.url,
                                 "status_code": response.status,
                                 "response": json_data
                             }
-
                             # Append to memory list
                             api_requests.append(entry)
                             logging.info(f"Successfully captured API: {response.url}")
-
                         except Exception as e:
                             logging.error(f"Error reading body for {response.url}: {e}")
-
                 except Exception as e:
                     logging.error(f"Error in capture_response for {getattr(response, 'url', 'unknown')}: {e}")
-
             # Listen on responses
             context.on("response", capture_response)
-
             site_url = "https://shopee.sg"
             logging.info(f"Opening {site_url}")
             try:
@@ -135,20 +120,14 @@ def Product_Scrape_by_Category(categories):
                 logging.info(f"Successfully opened {site_url}")
             except Exception as e:
                 logging.error(f"Failed to open {site_url}: {e}")
-                return all_products_data  # Early return on failure
-
-            # Load cookies from file
-            try:
-                with open("shopee_seller.json", "r", encoding="utf-8") as f:
-                    cookies = json.load(f)
-                logging.info("Successfully loaded cookies from file")
-            except Exception as e:
-                logging.error(f"Error loading cookies: {e}")
-                cookies = []
-
+                return all_products_data # Early return on failure
+            
+            # Use provided cookies_json (list of dicts) instead of loading from file
+            cookies = cookies_json
+            logging.info("Using provided cookies from device")
+            
             current_host = urlparse(page.url).hostname
             valid_cookies = []
-
             for cookie in cookies:
                 try:
                     cookie_payload = {
@@ -156,17 +135,14 @@ def Product_Scrape_by_Category(categories):
                         "value": cookie.get("value", ""),
                         "path": cookie.get("path", "/"),
                     }
-
                     if "secure" in cookie:
                         cookie_payload["secure"] = bool(cookie["secure"])
                     if "httpOnly" in cookie:
                         cookie_payload["httpOnly"] = bool(cookie["httpOnly"])
-
                     expiry = get_expiry(cookie)
                     if expiry:
                         # Playwright expects 'expires' as int seconds since epoch
                         cookie_payload["expires"] = expiry
-
                     domain = cookie.get("domain")
                     if domain:
                         normalized = domain.lstrip(".")
@@ -175,11 +151,9 @@ def Product_Scrape_by_Category(categories):
                         else:
                             # skip cookies for other domains
                             continue
-
                     valid_cookies.append(cookie_payload)
                 except Exception as e:
                     logging.error(f"Error processing cookie: {e}")
-
             if valid_cookies:
                 try:
                     context.add_cookies(valid_cookies)
@@ -188,35 +162,30 @@ def Product_Scrape_by_Category(categories):
                     logging.error(f"Error adding cookies: {e}")
             else:
                 logging.warning("No valid cookies added to the context.")
-
             try:
                 page.reload(wait_until="networkidle")
                 logging.info("Page reloaded successfully")
             except Exception as e:
                 logging.error(f"Error reloading page: {e}")
-
             time.sleep(4)
-
             # Try closing popup (same xpath as before)
             try:
                 page.locator('xpath=//*[@id="HomePagePopupBannerSection"]/div[2]/div').click(timeout=3000)
                 logging.info("Closed popup successfully")
             except Exception:
                 logging.info("No popup found or error closing popup")
-
             # Simulate human behaviour (your function supports Playwright page.evaluate)
             try:
                 play_simulate_human_behavior(page, random.randint(1, 7))
                 logging.info("Simulated human behavior on home page")
             except Exception as e:
                 logging.error(f"Error simulating human behavior: {e}")
-
-            
+           
             for cat in categories:
                 parent_catId = cat["parent_catid"]
                 cat_Id = cat["catid"]
                 for i in range(2):
-                    api_requests = []  # Clear for each page to capture only current page's APIs
+                    api_requests = [] # Clear for each page to capture only current page's APIs
                     page_url = f"https://shopee.sg/abc-cat.{parent_catId}.{cat_Id}?page={i}&sortBy=sales"
                     logging.info(f"Opening category page: {page_url}")
                     try:
@@ -225,9 +194,8 @@ def Product_Scrape_by_Category(categories):
                     except Exception as e:
                         logging.error(f"Failed to open {page_url}: {e}")
                         continue
-                    
+                   
                     play_simulate_human_behavior(page, random.randint(1, 7))
-
                     # Extract product data
                     products_data = []
                     found_products = False
@@ -238,12 +206,12 @@ def Product_Scrape_by_Category(categories):
                                 for item_wrapper in data['items']:
                                     if 'item_basic' in item_wrapper:
                                         item = item_wrapper['item_basic']
-                                        
+                                       
                                         # Extract the data you need, adding category info
                                         product_info = {
                                             "parent_category_id": parent_catId,
                                             "child_category_id": cat_Id,
-                                            "price": item.get('price', 0) / 100000,  # Convert to actual price
+                                            "price": item.get('price', 0) / 100000, # Convert to actual price
                                             "price_before_discount": item.get('price_before_discount', 0) / 100000,
                                             "raw_discount": item.get('raw_discount', 0),
                                             "discount_percentage": item.get('discount', '0%'),
@@ -259,19 +227,17 @@ def Product_Scrape_by_Category(categories):
                                             "shop_location": item.get('shop_location', ''),
                                             "stock": item.get('stock', 0),
                                         }
-                                        
+                                       
                                         products_data.append(product_info)
-                                
+                               
                                 found_products = True
                                 logging.info(f"Extracted {len(products_data)} products from {page_url}")
                         except Exception as e:
                             logging.error(f"Error processing API entry for {entry.get('url', 'unknown')}: {e}")
-
                     if found_products and products_data:
                         all_products_data.extend(products_data)
                     else:
                         logging.warning(f"No products found for page: {page_url}")
-
                     # Debug info: if no API requests were captured
                     if not api_requests:
                         logging.warning("No API requests captured for 'search_items'.")
@@ -285,10 +251,9 @@ def Product_Scrape_by_Category(categories):
                                     pass
                         except Exception as e:
                             logging.error(f"Error logging network requests: {e}")
-
     except Exception as e:
         logging.error(f"Unexpected error in Product_Scrape_by_Category: {e}")
-    
+   
     finally:
         try:
             context.close()
@@ -296,5 +261,5 @@ def Product_Scrape_by_Category(categories):
             logging.info("Browser and context closed")
         except Exception as e:
             logging.error(f"Error closing browser/context: {e}")
-    
+   
     return all_products_data

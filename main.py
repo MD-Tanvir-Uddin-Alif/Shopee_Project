@@ -7,9 +7,15 @@ from fastapi.responses import JSONResponse
 from sqlalchemy.orm import Session
 from datetime import datetime, UTC
 from zoneinfo import ZoneInfo
+import logging
 import time
 
-
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    filename='device_used.log',
+    filemode='a'
+)
 
 #----------------------------------------
 #  files imported
@@ -79,68 +85,123 @@ def get_all_main_category(db: Session=Depends(get_db)):
 #--------------------------------------------------
 #  scrape all data base on parent category
 #--------------------------------------------------
+# @app.post('/scrape-categories-wise-product/')
+# def trigger_category_scrape(db: Session = Depends(get_db)):
+#     parents = db.query(ProductMainCategoryModel.category_id).all()
+#     parent_ids = [row[0] for row in parents]
+
+#     total_saved = 0
+    
+#     for idx, parent_id in enumerate(parent_ids):
+#         data = db.query(ProductChildCategoryModel.parent_category_id, ProductChildCategoryModel.category_id).filter(ProductChildCategoryModel.parent_category_id == parent_id).all()
+#         result = [{"parent_catid": row[0], "catid": row[1]} for row in data]
+        
+#         products = Product_Scrape_by_Category(result)
+        
+#         for prod in products:
+#             db_product = ProductModel(**prod)
+#             db.add(db_product)
+#         db.commit()
+        
+#         total_saved += len(products)
+        
+#         parent = db.query(ProductMainCategoryModel).filter(ProductMainCategoryModel.category_id == parent_id).first()
+#         if parent:
+#             parent.scraped_at = datetime.now(ZoneInfo('UTC'))
+#             db.commit()
+        
+#         if idx < len(parent_ids) - 1:
+#             time.sleep(180)
+#     return {'message': f"Saved {total_saved} products to database across all parents"}
+
 @app.post('/scrape-categories-wise-product/')
 def trigger_category_scrape(db: Session = Depends(get_db)):
     parents = db.query(ProductMainCategoryModel.category_id).all()
     parent_ids = [row[0] for row in parents]
-
     total_saved = 0
-    
+    today_midnight = datetime.now(UTC).replace(hour=0, minute=0, second=0, microsecond=0)
+   
     for idx, parent_id in enumerate(parent_ids):
-        data = db.query(ProductChildCategoryModel.parent_category_id, ProductChildCategoryModel.category_id).filter(ProductChildCategoryModel.parent_category_id == parent_id).all()
+        # Pick a device that hasn't been scraped today (update_time < today_midnight) and is not failed
+        devices = db.query(DeviceModel).filter(
+            DeviceModel.is_faild == False,
+            DeviceModel.update_time < today_midnight
+        ).order_by(DeviceModel.update_time.asc()).all()
+        
+        if not devices:
+            logging.warning(f"No available devices for parent_id {parent_id}. Skipping.")
+            continue  # Skip this parent if no available device
+        
+        device = devices[0]  # Pick the oldest (earliest update_time)
+        logging.info(f"Using device {device.id} for parent_id {parent_id}")
+        
+        data = db.query(ProductChildCategoryModel.parent_category_id, ProductChildCategoryModel.category_id).filter(
+            ProductChildCategoryModel.parent_category_id == parent_id
+        ).all()
         result = [{"parent_catid": row[0], "catid": row[1]} for row in data]
+        num_children = len(result)
         
-        products = Product_Scrape_by_Category(result)
-        
-        for prod in products:
-            db_product = ProductModel(**prod)
-            db.add(db_product)
-        db.commit()
-        
-        total_saved += len(products)
-        
-        parent = db.query(ProductMainCategoryModel).filter(ProductMainCategoryModel.category_id == parent_id).first()
-        if parent:
-            parent.scraped_at = datetime.now(ZoneInfo('UTC'))
+        try:
+            products = Product_Scrape_by_Category(result, device.cookies)
+            
+            for prod in products:
+                db_product = ProductModel(**prod)
+                db.add(db_product)
             db.commit()
+            
+            total_saved += len(products)
+            
+            parent = db.query(ProductMainCategoryModel).filter(
+                ProductMainCategoryModel.category_id == parent_id
+            ).first()
+            if parent:
+                parent.scraped_at = datetime.now(UTC)
+                db.commit()
+            
+            # Update device attempts (add num_children * 2)
+            device.number_of_attempts += (num_children * 2)
+            db.commit()  # Triggers onupdate for update_time
+            
+        except Exception as e:
+            logging.error(f"Error scraping parent_id {parent_id} with device {device.id}: {e}")
+            device.is_failed = True
+            device.failed_time = datetime.now(UTC)
+            db.commit()  # Triggers onupdate for update_time and failed_time (but failed_time is set manually)
+            continue
         
         if idx < len(parent_ids) - 1:
             time.sleep(180)
+    
     return {'message': f"Saved {total_saved} products to database across all parents"}
-
-
 
 #--------------------------------------------------
 #  add info to Device Model
 #--------------------------------------------------
 @app.post('/add-device-info/{device_namae}/')
-def add_device_info(
-    device_name: str,
-    cookies: dict | list = Body(...),
-    email: str| None=None,
-    password: str | None=None,
-    db: Session=Depends(get_db)
-):
-    existing_device = db.query(DeviceModel).filter(DeviceModel.device_name==device_name).first()
+def add_device_info(device_name: str , email: str, password: str, cookies: dict | list = Body(...), db: Session=Depends(get_db)):
+    new_device = DeviceModel(
+        device_name=device_name,
+        cookies=cookies,
+        email=email,
+        password=password
+    )
     
-    if existing_device:
-        existing_device.device_name = device_name
+    db.add(new_device)
+    db.commit()
+    db.refresh(new_device)
+    return {'message':"new device added", 'data':new_device}
+
+
+@app.put('/update-device-info/{device_id}/')
+def add_device_info(device_id: int ,device_name: str | None=None, email: str | None=None, password: str | None=None, cookies: dict | list = Body(...), db: Session=Depends(get_db)):
+    
+    existing_device = db.query(DeviceModel).filter(DeviceModel.id==device_id).first()
+    
+    if(existing_device):
+        existing_device.device_name=device_name
         existing_device.cookies=cookies
         existing_device.email=email
         existing_device.password=password
-        existing_device.update_time = datetime.now(UTC)
         db.commit()
         db.refresh(existing_device)
-        return{'message':"device info updated", 'data':existing_device}
-    else:
-        new_device = DeviceModel(
-            device_name=device_name,
-            cookies=cookies,
-            email=email,
-            password=password
-        )
-        
-        db.add(new_device)
-        db.commit()
-        db.refresh(new_device)
-        return {'message':"new device added", 'data':new_device}
+    return {'message':"updated device info", 'data':existing_device}

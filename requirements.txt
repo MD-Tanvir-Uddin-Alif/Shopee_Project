@@ -1,0 +1,7 @@
+fastapi==0.120.4
+uvicorn== 0.38.0
+sqlalchemy==2.0.44
+psycopg2==2.9.11
+playwright==1.55.0
+logging==0.4.9.6
+dotenv==0.9.9

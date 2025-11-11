@@ -1,0 +1,114 @@
+2025-11-11 09:46:31,089 - INFO - Opening https://shopee.sg
+2025-11-11 09:46:38,866 - INFO - Successfully opened https://shopee.sg
+2025-11-11 09:46:38,924 - INFO - Successfully loaded cookies from file
+2025-11-11 09:46:38,935 - INFO - Added 27 cookies.
+2025-11-11 09:46:48,408 - INFO - Page reloaded successfully
+2025-11-11 09:46:52,609 - INFO - Closed popup successfully
+2025-11-11 09:47:05,626 - INFO - Simulated human behavior on home page
+2025-11-11 09:47:05,627 - INFO - Opening category page: https://shopee.sg/abc-cat.11012819.11027727?page=0&sortBy=sales
+2025-11-11 09:47:08,310 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11027727&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=2b7d4039-b0d3-44b7-adc0-b51a37806dc8
+2025-11-11 09:47:08,486 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11027727&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=2b7d4039-b0d3-44b7-adc0-b51a37806dc8
+2025-11-11 09:47:10,401 - INFO - Successfully opened https://shopee.sg/abc-cat.11012819.11027727?page=0&sortBy=sales
+2025-11-11 09:47:48,378 - INFO - Extracted 60 products from https://shopee.sg/abc-cat.11012819.11027727?page=0&sortBy=sales
+2025-11-11 09:47:48,379 - INFO - Opening category page: https://shopee.sg/abc-cat.11012819.11027727?page=1&sortBy=sales
+2025-11-11 09:47:50,991 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11027727&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=a7da9d4e-2214-48ea-9b88-fe539547b9be
+2025-11-11 09:47:51,070 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11027727&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=a7da9d4e-2214-48ea-9b88-fe539547b9be
+2025-11-11 09:47:53,050 - INFO - Successfully opened https://shopee.sg/abc-cat.11012819.11027727?page=1&sortBy=sales
+2025-11-11 09:47:58,973 - INFO - Extracted 60 products from https://shopee.sg/abc-cat.11012819.11027727?page=1&sortBy=sales
+2025-11-11 09:47:58,974 - INFO - Opening category page: https://shopee.sg/abc-cat.11012819.11027710?page=0&sortBy=sales
+2025-11-11 09:48:01,611 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11027710&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=9d53c80b-a93d-4ffa-8b7a-96f0fbc0e8d6
+2025-11-11 09:48:01,730 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11027710&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=9d53c80b-a93d-4ffa-8b7a-96f0fbc0e8d6
+2025-11-11 09:48:03,691 - INFO - Successfully opened https://shopee.sg/abc-cat.11012819.11027710?page=0&sortBy=sales
+2025-11-11 09:48:10,717 - INFO - Extracted 60 products from https://shopee.sg/abc-cat.11012819.11027710?page=0&sortBy=sales
+2025-11-11 09:48:10,717 - INFO - Opening category page: https://shopee.sg/abc-cat.11012819.11027710?page=1&sortBy=sales
+2025-11-11 09:48:13,240 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11027710&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=4af27f6b-fc0e-476f-8cbb-bb42ae073988
+2025-11-11 09:48:13,297 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11027710&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=4af27f6b-fc0e-476f-8cbb-bb42ae073988
+2025-11-11 09:48:15,216 - INFO - Successfully opened https://shopee.sg/abc-cat.11012819.11027710?page=1&sortBy=sales
+2025-11-11 09:48:25,761 - INFO - Extracted 60 products from https://shopee.sg/abc-cat.11012819.11027710?page=1&sortBy=sales
+2025-11-11 09:48:25,761 - INFO - Opening category page: https://shopee.sg/abc-cat.11012819.11012959?page=0&sortBy=sales
+2025-11-11 09:48:28,197 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012959&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=0d0ec1d3-1cd2-4a11-86f2-dee19bb621d0
+2025-11-11 09:48:28,287 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012959&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=0d0ec1d3-1cd2-4a11-86f2-dee19bb621d0
+2025-11-11 09:48:30,225 - INFO - Successfully opened https://shopee.sg/abc-cat.11012819.11012959?page=0&sortBy=sales
+2025-11-11 09:48:33,158 - INFO - Extracted 60 products from https://shopee.sg/abc-cat.11012819.11012959?page=0&sortBy=sales
+2025-11-11 09:48:33,158 - INFO - Opening category page: https://shopee.sg/abc-cat.11012819.11012959?page=1&sortBy=sales
+2025-11-11 09:48:35,598 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012959&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=2e6d834f-3a44-4f85-8ab5-ac9d2c68c555
+2025-11-11 09:48:35,712 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012959&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=2e6d834f-3a44-4f85-8ab5-ac9d2c68c555
+2025-11-11 09:48:37,684 - INFO - Successfully opened https://shopee.sg/abc-cat.11012819.11012959?page=1&sortBy=sales
+2025-11-11 09:48:40,009 - INFO - Extracted 60 products from https://shopee.sg/abc-cat.11012819.11012959?page=1&sortBy=sales
+2025-11-11 09:48:40,009 - INFO - Opening category page: https://shopee.sg/abc-cat.11012819.11012954?page=0&sortBy=sales
+2025-11-11 09:48:42,482 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012954&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=677053dc-6e9c-49f5-ae47-f2441b935e23
+2025-11-11 09:48:42,625 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012954&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=677053dc-6e9c-49f5-ae47-f2441b935e23
+2025-11-11 09:48:44,795 - INFO - Successfully opened https://shopee.sg/abc-cat.11012819.11012954?page=0&sortBy=sales
+2025-11-11 09:48:52,126 - INFO - Extracted 60 products from https://shopee.sg/abc-cat.11012819.11012954?page=0&sortBy=sales
+2025-11-11 09:48:52,127 - INFO - Opening category page: https://shopee.sg/abc-cat.11012819.11012954?page=1&sortBy=sales
+2025-11-11 09:48:54,806 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012954&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=470d3b12-7e7d-4795-9cc9-f9b990703c05
+2025-11-11 09:48:54,853 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012954&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=470d3b12-7e7d-4795-9cc9-f9b990703c05
+2025-11-11 09:48:56,886 - INFO - Successfully opened https://shopee.sg/abc-cat.11012819.11012954?page=1&sortBy=sales
+2025-11-11 09:49:06,770 - INFO - Extracted 60 products from https://shopee.sg/abc-cat.11012819.11012954?page=1&sortBy=sales
+2025-11-11 09:49:06,771 - INFO - Opening category page: https://shopee.sg/abc-cat.11012819.11012944?page=0&sortBy=sales
+2025-11-11 09:49:09,126 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012944&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=8f5da78c-7577-4f21-886f-9cf0415ebf00
+2025-11-11 09:49:09,242 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012944&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=8f5da78c-7577-4f21-886f-9cf0415ebf00
+2025-11-11 09:49:11,272 - INFO - Successfully opened https://shopee.sg/abc-cat.11012819.11012944?page=0&sortBy=sales
+2025-11-11 09:49:30,121 - INFO - Extracted 60 products from https://shopee.sg/abc-cat.11012819.11012944?page=0&sortBy=sales
+2025-11-11 09:49:30,121 - INFO - Opening category page: https://shopee.sg/abc-cat.11012819.11012944?page=1&sortBy=sales
+2025-11-11 09:49:33,450 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012944&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=34afc6ec-f319-4cd8-b650-e61c528f78e7
+2025-11-11 09:49:33,497 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012944&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=34afc6ec-f319-4cd8-b650-e61c528f78e7
+2025-11-11 09:49:34,750 - INFO - Successfully opened https://shopee.sg/abc-cat.11012819.11012944?page=1&sortBy=sales
+2025-11-11 09:49:45,203 - INFO - Extracted 60 products from https://shopee.sg/abc-cat.11012819.11012944?page=1&sortBy=sales
+2025-11-11 09:49:45,204 - INFO - Opening category page: https://shopee.sg/abc-cat.11012819.11012935?page=0&sortBy=sales
+2025-11-11 09:49:47,440 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012935&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=79325a50-b60c-4ec0-ab02-2b75bb1b90e9
+2025-11-11 09:49:47,590 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012935&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=79325a50-b60c-4ec0-ab02-2b75bb1b90e9
+2025-11-11 09:49:49,508 - INFO - Successfully opened https://shopee.sg/abc-cat.11012819.11012935?page=0&sortBy=sales
+2025-11-11 09:50:08,343 - INFO - Extracted 60 products from https://shopee.sg/abc-cat.11012819.11012935?page=0&sortBy=sales
+2025-11-11 09:50:08,344 - INFO - Opening category page: https://shopee.sg/abc-cat.11012819.11012935?page=1&sortBy=sales
+2025-11-11 09:50:10,500 - ERROR - Failed to open https://shopee.sg/abc-cat.11012819.11012935?page=1&sortBy=sales: Page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://shopee.sg/abc-cat.11012819.11012935?page=1&sortBy=sales", waiting until "networkidle"
+
+2025-11-11 09:50:10,500 - INFO - Opening category page: https://shopee.sg/abc-cat.11012819.11012923?page=0&sortBy=sales
+2025-11-11 09:50:10,523 - ERROR - Failed to open https://shopee.sg/abc-cat.11012819.11012923?page=0&sortBy=sales: Page.goto: Target page, context or browser has been closed
+2025-11-11 09:50:10,523 - INFO - Opening category page: https://shopee.sg/abc-cat.11012819.11012923?page=1&sortBy=sales
+2025-11-11 09:50:10,525 - ERROR - Failed to open https://shopee.sg/abc-cat.11012819.11012923?page=1&sortBy=sales: Page.goto: Target page, context or browser has been closed
+2025-11-11 09:50:10,525 - INFO - Opening category page: https://shopee.sg/abc-cat.11012819.11012911?page=0&sortBy=sales
+2025-11-11 09:50:10,526 - ERROR - Failed to open https://shopee.sg/abc-cat.11012819.11012911?page=0&sortBy=sales: Page.goto: Target page, context or browser has been closed
+2025-11-11 09:50:10,526 - INFO - Opening category page: https://shopee.sg/abc-cat.11012819.11012911?page=1&sortBy=sales
+2025-11-11 09:50:10,533 - ERROR - Failed to open https://shopee.sg/abc-cat.11012819.11012911?page=1&sortBy=sales: Page.goto: Target page, context or browser has been closed
+2025-11-11 09:50:10,533 - INFO - Opening category page: https://shopee.sg/abc-cat.11012819.11012905?page=0&sortBy=sales
+2025-11-11 09:50:10,535 - ERROR - Failed to open https://shopee.sg/abc-cat.11012819.11012905?page=0&sortBy=sales: Page.goto: Target page, context or browser has been closed
+2025-11-11 09:50:10,535 - INFO - Opening category page: https://shopee.sg/abc-cat.11012819.11012905?page=1&sortBy=sales
+2025-11-11 09:50:10,537 - ERROR - Failed to open https://shopee.sg/abc-cat.11012819.11012905?page=1&sortBy=sales: Page.goto: Target page, context or browser has been closed
+2025-11-11 09:50:10,537 - INFO - Opening category page: https://shopee.sg/abc-cat.11012819.11012888?page=0&sortBy=sales
+2025-11-11 09:50:10,538 - ERROR - Failed to open https://shopee.sg/abc-cat.11012819.11012888?page=0&sortBy=sales: Page.goto: Target page, context or browser has been closed
+2025-11-11 09:50:10,538 - INFO - Opening category page: https://shopee.sg/abc-cat.11012819.11012888?page=1&sortBy=sales
+2025-11-11 09:50:10,539 - ERROR - Failed to open https://shopee.sg/abc-cat.11012819.11012888?page=1&sortBy=sales: Page.goto: Target page, context or browser has been closed
+2025-11-11 09:50:10,539 - INFO - Opening category page: https://shopee.sg/abc-cat.11012819.11012882?page=0&sortBy=sales
+2025-11-11 09:50:10,541 - ERROR - Failed to open https://shopee.sg/abc-cat.11012819.11012882?page=0&sortBy=sales: Page.goto: Target page, context or browser has been closed
+2025-11-11 09:50:10,541 - INFO - Opening category page: https://shopee.sg/abc-cat.11012819.11012882?page=1&sortBy=sales
+2025-11-11 09:50:10,543 - ERROR - Failed to open https://shopee.sg/abc-cat.11012819.11012882?page=1&sortBy=sales: Page.goto: Target page, context or browser has been closed
+2025-11-11 09:50:10,543 - INFO - Opening category page: https://shopee.sg/abc-cat.11012819.11012880?page=0&sortBy=sales
+2025-11-11 09:50:10,547 - ERROR - Failed to open https://shopee.sg/abc-cat.11012819.11012880?page=0&sortBy=sales: Page.goto: Target page, context or browser has been closed
+2025-11-11 09:50:10,547 - INFO - Opening category page: https://shopee.sg/abc-cat.11012819.11012880?page=1&sortBy=sales
+2025-11-11 09:50:10,549 - ERROR - Failed to open https://shopee.sg/abc-cat.11012819.11012880?page=1&sortBy=sales: Page.goto: Target page, context or browser has been closed
+2025-11-11 09:50:10,549 - INFO - Opening category page: https://shopee.sg/abc-cat.11012819.11012871?page=0&sortBy=sales
+2025-11-11 09:50:10,551 - ERROR - Failed to open https://shopee.sg/abc-cat.11012819.11012871?page=0&sortBy=sales: Page.goto: Target page, context or browser has been closed
+2025-11-11 09:50:10,551 - INFO - Opening category page: https://shopee.sg/abc-cat.11012819.11012871?page=1&sortBy=sales
+2025-11-11 09:50:10,553 - ERROR - Failed to open https://shopee.sg/abc-cat.11012819.11012871?page=1&sortBy=sales: Page.goto: Target page, context or browser has been closed
+2025-11-11 09:50:10,553 - INFO - Opening category page: https://shopee.sg/abc-cat.11012819.11012864?page=0&sortBy=sales
+2025-11-11 09:50:10,554 - ERROR - Failed to open https://shopee.sg/abc-cat.11012819.11012864?page=0&sortBy=sales: Page.goto: Target page, context or browser has been closed
+2025-11-11 09:50:10,554 - INFO - Opening category page: https://shopee.sg/abc-cat.11012819.11012864?page=1&sortBy=sales
+2025-11-11 09:50:10,560 - ERROR - Failed to open https://shopee.sg/abc-cat.11012819.11012864?page=1&sortBy=sales: Page.goto: Connection closed while reading from the driver
+2025-11-11 09:50:10,561 - INFO - Opening category page: https://shopee.sg/abc-cat.11012819.11012854?page=0&sortBy=sales
+2025-11-11 09:50:10,562 - ERROR - Failed to open https://shopee.sg/abc-cat.11012819.11012854?page=0&sortBy=sales: Page.goto: Connection closed while reading from the driver
+2025-11-11 09:50:10,562 - INFO - Opening category page: https://shopee.sg/abc-cat.11012819.11012854?page=1&sortBy=sales
+2025-11-11 09:50:10,563 - ERROR - Failed to open https://shopee.sg/abc-cat.11012819.11012854?page=1&sortBy=sales: Page.goto: Connection closed while reading from the driver
+2025-11-11 09:50:10,563 - INFO - Opening category page: https://shopee.sg/abc-cat.11012819.11012847?page=0&sortBy=sales
+2025-11-11 09:50:10,563 - ERROR - Failed to open https://shopee.sg/abc-cat.11012819.11012847?page=0&sortBy=sales: Page.goto: Connection closed while reading from the driver
+2025-11-11 09:50:10,563 - INFO - Opening category page: https://shopee.sg/abc-cat.11012819.11012847?page=1&sortBy=sales
+2025-11-11 09:50:10,564 - ERROR - Failed to open https://shopee.sg/abc-cat.11012819.11012847?page=1&sortBy=sales: Page.goto: Connection closed while reading from the driver
+2025-11-11 09:50:10,564 - INFO - Opening category page: https://shopee.sg/abc-cat.11012819.11012836?page=0&sortBy=sales
+2025-11-11 09:50:10,564 - WARNING - socket.send() raised exception.
+2025-11-11 09:50:10,565 - ERROR - Failed to open https://shopee.sg/abc-cat.11012819.11012836?page=0&sortBy=sales: Page.goto: Connection closed while reading from the driver
+2025-11-11 09:50:10,565 - INFO - Opening category page: https://shopee.sg/abc-cat.11012819.11012836?page=1&sortBy=sales
+2025-11-11 09:50:10,565 - WARNING - socket.send() raised exception.
+2025-11-11 09:50:10,565 - ERROR - Failed to open https://shopee.sg/abc-cat.11012819.11012836?page=1&sortBy=sales: Page.goto: Connection closed while reading from the driver
+2025-11-11 09:50:10,585 - ERROR - Error closing browser/context: Event loop is closed! Is Playwright already stopped?

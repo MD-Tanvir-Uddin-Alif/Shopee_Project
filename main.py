@@ -130,7 +130,7 @@ def trigger_category_scrape(db: Session = Depends(get_db)):
         
         if not devices:
             logging.warning(f"No available devices for parent_id {parent_id}. Skipping.")
-            continue  # Skip this parent if no available device
+            continue  
         
         device = devices[0]  # Pick the oldest (earliest update_time)
         logging.info(f"Using device {device.id} for parent_id {parent_id}")
@@ -158,9 +158,8 @@ def trigger_category_scrape(db: Session = Depends(get_db)):
                 parent.scraped_at = datetime.now(UTC)
                 db.commit()
             
-            # Update device attempts (add num_children * 2)
             device.number_of_attempts += (num_children * 2)
-            db.commit()  # Triggers onupdate for update_time
+            db.commit()  
             
         except Exception as e:
             logging.error(f"Error scraping parent_id {parent_id} with device {device.id}: {e}")

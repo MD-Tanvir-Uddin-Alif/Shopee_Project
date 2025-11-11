@@ -6,9 +6,7 @@ import os
 from dotenv import load_dotenv
 from urllib.parse import urlparse
 from playwright.sync_api import sync_playwright
-
 from playwright_behaviour_function import play_simulate_human_behavior
-
 
 logging.basicConfig(
     level=logging.INFO,
@@ -123,8 +121,15 @@ def Product_Scrape_by_Category(categories, cookies_json):
                 return all_products_data # Early return on failure
             
             # Use provided cookies_json (list of dicts) instead of loading from file
-            cookies = cookies_json
             logging.info("Using provided cookies from device")
+            cookies = cookies_json
+            if isinstance(cookies, str):
+                try:
+                    cookies = json.loads(cookies)
+                    logging.info("Successfully parsed cookies JSON string into list")
+                except json.JSONDecodeError as e:
+                    logging.error(f"Failed to parse cookies JSON: {e}")
+                    cookies = []
             
             current_host = urlparse(page.url).hostname
             valid_cookies = []

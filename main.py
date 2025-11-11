@@ -113,6 +113,34 @@ def trigger_category_scrape(db: Session = Depends(get_db)):
 #--------------------------------------------------
 #  add info to Device Model
 #--------------------------------------------------
-@app.post('/add-info/{device_namae}/{email}/{password}/{cookies}')
-def add_device_info():
-    pass
+@app.post('/add-device-info/{device_namae}/{email}/{password}/{cookies}')
+def add_device_info(
+    device_name: str,
+    cookies: str,
+    email: str| None=None,
+    password: str | None=None,
+    db: Session=Depends(get_db)
+):
+    existing_device = db.query(DeviceModel).filter(DeviceModel.device_name==device_name).first()
+    
+    if existing_device:
+        existing_device.device_name = device_name
+        existing_device.cookies=cookies
+        existing_device.email=email
+        existing_device.password=password
+        existing_device.update_time = datetime.now(UTC)
+        db.commit(existing_device)
+        db.refresh(existing_device)
+        return{'message':"device info updated", 'data':existing_device}
+    else:
+        new_device = DeviceModel(
+            device_name=device_name,
+            cookies=cookies,
+            email=email,
+            password=password
+        )
+        
+        db.add(new_device)
+        db.commit()
+        db.refresh(new_device)
+        return {'message':"new device added", 'data':new_device}

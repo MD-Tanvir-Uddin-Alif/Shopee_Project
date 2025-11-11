@@ -21,6 +21,7 @@ logging.basicConfig(
 #  files imported
 #----------------------------------------
 from models import ProductChildCategoryModel, ProductMainCategoryModel, ProductModel, DeviceModel
+from schema import DeviceUpdate
 from scrape_all_category import Category_Scraper
 from category_base_product_scrape import Product_Scrape_by_Category
 
@@ -192,15 +193,20 @@ def add_device_info(device_name: str , email: str, password: str, cookies: dict 
 
 
 @app.put('/update-device-info/{device_id}/')
-def add_device_info(device_id: int ,device_name: str | None=None, email: str | None=None, password: str | None=None, cookies: dict | list = Body(...), db: Session=Depends(get_db)):
+def update_device_info(
+    device_id: int,
+    device_update: DeviceUpdate,  
+    db: Session = Depends(get_db)
+):
+    existing_device = db.query(DeviceModel).filter(DeviceModel.id == device_id).first()
     
-    existing_device = db.query(DeviceModel).filter(DeviceModel.id==device_id).first()
+    if not existing_device:
+        return {'message': "Device not found"}
+
+    for key, value in device_update.dict(exclude_unset=True).items():
+        setattr(existing_device, key, value)
+
+    db.commit()
+    db.refresh(existing_device)
     
-    if(existing_device):
-        existing_device.device_name=device_name
-        existing_device.cookies=cookies
-        existing_device.email=email
-        existing_device.password=password
-        db.commit()
-        db.refresh(existing_device)
-    return {'message':"updated device info", 'data':existing_device}
+    return {'message': "Updated device info", 'data': existing_device}

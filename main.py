@@ -2,12 +2,13 @@
 #  lybries
 #----------------------------------------
 from databse_config import Base, engine, get_db
-from fastapi import FastAPI, Depends, status, Body
+from fastapi import FastAPI, Depends, status, Body, HTTPException
 from fastapi.responses import JSONResponse
 from sqlalchemy.orm import Session
 from datetime import datetime, UTC
 from zoneinfo import ZoneInfo
 import logging
+import random
 import time
 
 logging.basicConfig(
@@ -17,6 +18,8 @@ logging.basicConfig(
     filemode='a'
 )
 
+
+UTC = ZoneInfo('UTC')
 #----------------------------------------
 #  files imported
 #----------------------------------------
@@ -115,6 +118,8 @@ def get_all_main_category(db: Session=Depends(get_db)):
 #             time.sleep(180)
 #     return {'message': f"Saved {total_saved} products to database across all parents"}
 
+
+
 @app.post('/scrape-categories-wise-product/')
 def trigger_category_scrape(db: Session = Depends(get_db)):
     parents = db.query(ProductMainCategoryModel.category_id).all()
@@ -160,9 +165,12 @@ def trigger_category_scrape(db: Session = Depends(get_db)):
             if success:
                 device.number_of_attemps += (num_children * 2)
                 device.status = True
+                db.commit()  
             else:
                 device.status = False
-            db.commit()  
+                device.is_faild = True
+                device.failed_time = datetime.now(UTC)
+                db.commit()  
             
         except Exception as e:
             logging.error(f"Error scraping parent_id {parent_id} with device {device.id}: {e}")
@@ -177,6 +185,63 @@ def trigger_category_scrape(db: Session = Depends(get_db)):
     
     return {'message': f"Saved {total_saved} products to database across all parents"}
 
+
+#------------------------------------
+# Manually reset a single device
+#-------------------------------------
+@app.post('/reset-device/{device_id}')
+def reset_single_device(device_id: int, db: Session = Depends(get_db)):
+    
+    device = db.query(DeviceModel).filter(DeviceModel.id == device_id).first()
+    
+    if not device:
+        raise HTTPException(status_code=404, detail="Device not found")
+    
+    device.is_faild = False
+    device.status = False
+    device.update_time = datetime.now(UTC)
+    db.commit()
+    
+    return {
+        'message': f'Device {device.device_name} reset successfully',
+        'device_id': device_id
+    }
+
+
+#---------------------------------------------
+# Check device status
+#---------------------------------------------
+@app.get('/device-status/')
+def get_device_status(db: Session = Depends(get_db)):
+    """
+    Check status of all devices
+    """
+    devices = db.query(DeviceModel).all()
+    
+    device_info = []
+    for device in devices:
+        device_info.append({
+            'id': device.id,
+            'device_name': device.device_name,
+            'email': device.email,
+            'attempts': device.number_of_attemps,
+            'is_failed': device.is_faild,
+            'status': 'In Use' if device.status else 'Available',
+            'failed_time': device.failed_time.isoformat() if device.failed_time else None,
+            'last_update': device.update_time.isoformat() if device.update_time else None,
+        })
+    
+    available = sum(1 for d in devices if not d.is_faild and not d.status)
+    in_use = sum(1 for d in devices if d.status)
+    failed = sum(1 for d in devices if d.is_faild)
+    
+    return {
+        'total_devices': len(devices),
+        'available': available,
+        'in_use': in_use,
+        'failed': failed,
+        'devices': device_info
+    }
 #--------------------------------------------------
 #  add info to Device Model
 #--------------------------------------------------

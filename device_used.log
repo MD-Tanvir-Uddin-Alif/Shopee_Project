@@ -1,185 +1,447 @@
-2025-11-11 14:40:46,097 - INFO - Using device 5 for parent_id 11011538
-2025-11-11 14:40:48,143 - INFO - Opening https://shopee.sg
-2025-11-11 14:40:53,716 - INFO - Successfully opened https://shopee.sg
-2025-11-11 14:40:53,716 - INFO - Using provided cookies from device
-2025-11-11 14:40:53,716 - INFO - Successfully parsed cookies JSON string into list
-2025-11-11 14:40:53,727 - INFO - Added 31 cookies.
-2025-11-11 14:40:56,245 - INFO - Page reloaded successfully
-2025-11-11 14:41:02,101 - INFO - Closed popup successfully
-2025-11-11 14:41:14,673 - INFO - Simulated human behavior on home page
-2025-11-11 14:41:14,673 - INFO - Opening category page: https://shopee.sg/abc-cat.11011538.11011739?page=0&sortBy=sales
-2025-11-11 14:41:17,364 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011739&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=9da3fa77-ff5c-4b62-bf73-588ba51e62d8
-2025-11-11 14:41:17,405 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011739&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=9da3fa77-ff5c-4b62-bf73-588ba51e62d8
-2025-11-11 14:41:19,489 - INFO - Successfully opened https://shopee.sg/abc-cat.11011538.11011739?page=0&sortBy=sales
-2025-11-11 14:41:21,768 - INFO - Extracted 60 products from https://shopee.sg/abc-cat.11011538.11011739?page=0&sortBy=sales
-2025-11-11 14:41:21,769 - INFO - Opening category page: https://shopee.sg/abc-cat.11011538.11011739?page=1&sortBy=sales
-2025-11-11 14:41:24,143 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011739&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=6e16e98d-6120-4cb8-b42b-27da451d3fe1
-2025-11-11 14:41:24,273 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011739&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=6e16e98d-6120-4cb8-b42b-27da451d3fe1
-2025-11-11 14:41:26,438 - INFO - Successfully opened https://shopee.sg/abc-cat.11011538.11011739?page=1&sortBy=sales
-2025-11-11 14:42:04,967 - INFO - Extracted 60 products from https://shopee.sg/abc-cat.11011538.11011739?page=1&sortBy=sales
-2025-11-11 14:42:04,968 - INFO - Opening category page: https://shopee.sg/abc-cat.11011538.11059285?page=0&sortBy=sales
-2025-11-11 14:42:07,463 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11059285&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=ec77c889-ffa8-449a-af90-1ab352717f15
-2025-11-11 14:42:07,518 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11059285&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=ec77c889-ffa8-449a-af90-1ab352717f15
-2025-11-11 14:42:09,439 - INFO - Successfully opened https://shopee.sg/abc-cat.11011538.11059285?page=0&sortBy=sales
-2025-11-11 14:42:25,881 - INFO - Extracted 60 products from https://shopee.sg/abc-cat.11011538.11059285?page=0&sortBy=sales
-2025-11-11 14:42:25,881 - INFO - Opening category page: https://shopee.sg/abc-cat.11011538.11059285?page=1&sortBy=sales
-2025-11-11 14:42:28,361 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11059285&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=49faa2d7-ed54-45e3-a160-7824a1e34283
-2025-11-11 14:42:28,420 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11059285&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=49faa2d7-ed54-45e3-a160-7824a1e34283
-2025-11-11 14:42:30,296 - INFO - Successfully opened https://shopee.sg/abc-cat.11011538.11059285?page=1&sortBy=sales
-2025-11-11 14:43:01,681 - INFO - Extracted 60 products from https://shopee.sg/abc-cat.11011538.11059285?page=1&sortBy=sales
-2025-11-11 14:43:01,681 - INFO - Opening category page: https://shopee.sg/abc-cat.11011538.11011731?page=0&sortBy=sales
-2025-11-11 14:43:04,396 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011731&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=88a2208b-7ecc-469d-a0df-54c7c108791c
-2025-11-11 14:43:04,445 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011731&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=88a2208b-7ecc-469d-a0df-54c7c108791c
-2025-11-11 14:43:06,736 - INFO - Successfully opened https://shopee.sg/abc-cat.11011538.11011731?page=0&sortBy=sales
-2025-11-11 14:43:25,068 - INFO - Extracted 60 products from https://shopee.sg/abc-cat.11011538.11011731?page=0&sortBy=sales
-2025-11-11 14:43:25,068 - INFO - Opening category page: https://shopee.sg/abc-cat.11011538.11011731?page=1&sortBy=sales
-2025-11-11 14:43:27,987 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011731&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=570baecc-681d-46a5-83fb-efb583ab7f69
-2025-11-11 14:43:28,139 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011731&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=570baecc-681d-46a5-83fb-efb583ab7f69
-2025-11-11 14:43:30,191 - INFO - Successfully opened https://shopee.sg/abc-cat.11011538.11011731?page=1&sortBy=sales
-2025-11-11 14:43:33,872 - INFO - Extracted 60 products from https://shopee.sg/abc-cat.11011538.11011731?page=1&sortBy=sales
-2025-11-11 14:43:33,872 - INFO - Opening category page: https://shopee.sg/abc-cat.11011538.11011712?page=0&sortBy=sales
-2025-11-11 14:43:36,249 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011712&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=cffe4e86-cc10-4dd2-9394-d709e9f92827
-2025-11-11 14:43:36,343 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011712&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=cffe4e86-cc10-4dd2-9394-d709e9f92827
-2025-11-11 14:43:38,357 - INFO - Successfully opened https://shopee.sg/abc-cat.11011538.11011712?page=0&sortBy=sales
-2025-11-11 14:43:58,231 - INFO - Extracted 60 products from https://shopee.sg/abc-cat.11011538.11011712?page=0&sortBy=sales
-2025-11-11 14:43:58,231 - INFO - Opening category page: https://shopee.sg/abc-cat.11011538.11011712?page=1&sortBy=sales
-2025-11-11 14:44:01,494 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011712&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=aa01164a-cc42-4061-9b8a-f139ab02c84a
-2025-11-11 14:44:01,622 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011712&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=aa01164a-cc42-4061-9b8a-f139ab02c84a
-2025-11-11 14:44:03,583 - INFO - Successfully opened https://shopee.sg/abc-cat.11011538.11011712?page=1&sortBy=sales
-2025-11-11 14:44:11,365 - INFO - Extracted 60 products from https://shopee.sg/abc-cat.11011538.11011712?page=1&sortBy=sales
-2025-11-11 14:44:11,365 - INFO - Opening category page: https://shopee.sg/abc-cat.11011538.11011703?page=0&sortBy=sales
-2025-11-11 14:44:14,332 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011703&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=6352443c-4471-4b4a-944b-d4a53eacb6de
-2025-11-11 14:44:14,454 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011703&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=6352443c-4471-4b4a-944b-d4a53eacb6de
-2025-11-11 14:44:16,769 - INFO - Successfully opened https://shopee.sg/abc-cat.11011538.11011703?page=0&sortBy=sales
-2025-11-11 14:44:29,447 - INFO - Extracted 60 products from https://shopee.sg/abc-cat.11011538.11011703?page=0&sortBy=sales
-2025-11-11 14:44:29,447 - INFO - Opening category page: https://shopee.sg/abc-cat.11011538.11011703?page=1&sortBy=sales
-2025-11-11 14:44:33,611 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011703&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=977de2ac-1b90-47cb-ace8-9273b250aa9c
-2025-11-11 14:44:33,809 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011703&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=977de2ac-1b90-47cb-ace8-9273b250aa9c
-2025-11-11 14:44:35,972 - INFO - Successfully opened https://shopee.sg/abc-cat.11011538.11011703?page=1&sortBy=sales
-2025-11-11 14:44:39,405 - INFO - Extracted 60 products from https://shopee.sg/abc-cat.11011538.11011703?page=1&sortBy=sales
-2025-11-11 14:44:39,406 - INFO - Opening category page: https://shopee.sg/abc-cat.11011538.11011658?page=0&sortBy=sales
-2025-11-11 14:44:43,512 - INFO - Successfully opened https://shopee.sg/abc-cat.11011538.11011658?page=0&sortBy=sales
-2025-11-11 14:44:46,533 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011658&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=748973a0-422d-4a35-996a-11cc565d47c7
-2025-11-11 14:44:48,209 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011658&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=748973a0-422d-4a35-996a-11cc565d47c7
-2025-11-11 14:45:29,407 - INFO - Extracted 60 products from https://shopee.sg/abc-cat.11011538.11011658?page=0&sortBy=sales
-2025-11-11 14:45:29,409 - INFO - Opening category page: https://shopee.sg/abc-cat.11011538.11011658?page=1&sortBy=sales
-2025-11-11 14:45:33,860 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011658&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=c73ca82b-b39d-44c1-b48a-208430107ca5
-2025-11-11 14:45:34,181 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011658&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=c73ca82b-b39d-44c1-b48a-208430107ca5
-2025-11-11 14:45:38,519 - INFO - Successfully opened https://shopee.sg/abc-cat.11011538.11011658?page=1&sortBy=sales
-2025-11-11 14:46:25,036 - INFO - Extracted 60 products from https://shopee.sg/abc-cat.11011538.11011658?page=1&sortBy=sales
-2025-11-11 14:46:25,038 - INFO - Opening category page: https://shopee.sg/abc-cat.11011538.11011639?page=0&sortBy=sales
-2025-11-11 14:46:28,603 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011639&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=cfaf341e-9dc3-47ed-b3e9-c4f4f09a5599
-2025-11-11 14:46:28,748 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011639&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=cfaf341e-9dc3-47ed-b3e9-c4f4f09a5599
-2025-11-11 14:46:30,006 - INFO - Successfully opened https://shopee.sg/abc-cat.11011538.11011639?page=0&sortBy=sales
-2025-11-11 14:46:36,463 - INFO - Extracted 60 products from https://shopee.sg/abc-cat.11011538.11011639?page=0&sortBy=sales
-2025-11-11 14:46:36,463 - INFO - Opening category page: https://shopee.sg/abc-cat.11011538.11011639?page=1&sortBy=sales
-2025-11-11 14:46:39,008 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011639&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=59704841-81f8-44a1-b91a-4084f9cb3bb2
-2025-11-11 14:46:39,386 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011639&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=59704841-81f8-44a1-b91a-4084f9cb3bb2
-2025-11-11 14:46:40,735 - INFO - Successfully opened https://shopee.sg/abc-cat.11011538.11011639?page=1&sortBy=sales
-2025-11-11 14:46:52,474 - INFO - Extracted 60 products from https://shopee.sg/abc-cat.11011538.11011639?page=1&sortBy=sales
-2025-11-11 14:46:52,474 - INFO - Opening category page: https://shopee.sg/abc-cat.11011538.11011614?page=0&sortBy=sales
-2025-11-11 14:46:55,290 - INFO - Successfully opened https://shopee.sg/abc-cat.11011538.11011614?page=0&sortBy=sales
-2025-11-11 14:46:57,546 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011614&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=3b0b17d6-aa36-40f4-9ae9-d3dc898cad66
-2025-11-11 14:46:59,834 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011614&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=3b0b17d6-aa36-40f4-9ae9-d3dc898cad66
-2025-11-11 14:48:18,186 - INFO - Extracted 60 products from https://shopee.sg/abc-cat.11011538.11011614?page=0&sortBy=sales
-2025-11-11 14:48:18,186 - INFO - Opening category page: https://shopee.sg/abc-cat.11011538.11011614?page=1&sortBy=sales
-2025-11-11 14:48:21,139 - INFO - Successfully opened https://shopee.sg/abc-cat.11011538.11011614?page=1&sortBy=sales
-2025-11-11 14:48:24,339 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011614&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=5ee6a6fb-139a-4c8b-b469-c61c6b0add8f
-2025-11-11 14:48:25,151 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011614&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=5ee6a6fb-139a-4c8b-b469-c61c6b0add8f
-2025-11-11 14:48:31,821 - INFO - Extracted 60 products from https://shopee.sg/abc-cat.11011538.11011614?page=1&sortBy=sales
-2025-11-11 14:48:31,821 - INFO - Opening category page: https://shopee.sg/abc-cat.11011538.11011584?page=0&sortBy=sales
-2025-11-11 14:48:35,304 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011584&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=bac1d832-c223-48aa-ac05-83cd4f3afe2d
-2025-11-11 14:48:35,587 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011584&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=bac1d832-c223-48aa-ac05-83cd4f3afe2d
-2025-11-11 14:48:39,717 - INFO - Successfully opened https://shopee.sg/abc-cat.11011538.11011584?page=0&sortBy=sales
-2025-11-11 14:48:59,883 - INFO - Extracted 60 products from https://shopee.sg/abc-cat.11011538.11011584?page=0&sortBy=sales
-2025-11-11 14:48:59,914 - INFO - Opening category page: https://shopee.sg/abc-cat.11011538.11011584?page=1&sortBy=sales
-2025-11-11 14:49:04,192 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011584&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=721552c1-fb52-44d8-935c-242e6f413562
-2025-11-11 14:49:04,478 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011584&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=721552c1-fb52-44d8-935c-242e6f413562
-2025-11-11 14:49:07,514 - INFO - Successfully opened https://shopee.sg/abc-cat.11011538.11011584?page=1&sortBy=sales
-2025-11-11 14:49:52,151 - INFO - Extracted 60 products from https://shopee.sg/abc-cat.11011538.11011584?page=1&sortBy=sales
-2025-11-11 14:49:52,151 - INFO - Opening category page: https://shopee.sg/abc-cat.11011538.11011569?page=0&sortBy=sales
-2025-11-11 14:49:54,735 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011569&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=ac275dac-ea2a-4e2f-bc7e-d8eaf68badbc
-2025-11-11 14:49:54,815 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011569&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=ac275dac-ea2a-4e2f-bc7e-d8eaf68badbc
-2025-11-11 14:49:56,864 - INFO - Successfully opened https://shopee.sg/abc-cat.11011538.11011569?page=0&sortBy=sales
-2025-11-11 14:50:04,445 - INFO - Extracted 60 products from https://shopee.sg/abc-cat.11011538.11011569?page=0&sortBy=sales
-2025-11-11 14:50:04,445 - INFO - Opening category page: https://shopee.sg/abc-cat.11011538.11011569?page=1&sortBy=sales
-2025-11-11 14:50:06,988 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011569&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=5c926577-53c0-4356-949a-4e4eee9eb4e7
-2025-11-11 14:50:07,084 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011569&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=5c926577-53c0-4356-949a-4e4eee9eb4e7
-2025-11-11 14:50:09,024 - INFO - Successfully opened https://shopee.sg/abc-cat.11011538.11011569?page=1&sortBy=sales
-2025-11-11 14:50:15,522 - INFO - Extracted 60 products from https://shopee.sg/abc-cat.11011538.11011569?page=1&sortBy=sales
-2025-11-11 14:50:15,522 - INFO - Opening category page: https://shopee.sg/abc-cat.11011538.11011555?page=0&sortBy=sales
-2025-11-11 14:50:19,713 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011555&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=e0e3d26e-b0db-4cbe-a683-5268be21de1e
-2025-11-11 14:50:20,958 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011555&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=e0e3d26e-b0db-4cbe-a683-5268be21de1e
-2025-11-11 14:50:24,280 - INFO - Successfully opened https://shopee.sg/abc-cat.11011538.11011555?page=0&sortBy=sales
-2025-11-11 14:50:29,963 - INFO - Extracted 60 products from https://shopee.sg/abc-cat.11011538.11011555?page=0&sortBy=sales
-2025-11-11 14:50:29,963 - INFO - Opening category page: https://shopee.sg/abc-cat.11011538.11011555?page=1&sortBy=sales
-2025-11-11 14:50:34,377 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011555&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=1818f150-2b86-477a-85fc-224feba3ad68
-2025-11-11 14:50:35,365 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011555&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=1818f150-2b86-477a-85fc-224feba3ad68
-2025-11-11 14:50:38,704 - INFO - Successfully opened https://shopee.sg/abc-cat.11011538.11011555?page=1&sortBy=sales
-2025-11-11 14:51:20,875 - INFO - Extracted 60 products from https://shopee.sg/abc-cat.11011538.11011555?page=1&sortBy=sales
-2025-11-11 14:51:20,875 - INFO - Opening category page: https://shopee.sg/abc-cat.11011538.11027326?page=0&sortBy=sales
-2025-11-11 14:51:25,577 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11027326&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=c72107e5-85db-43c9-94c1-35a881b5669b
-2025-11-11 14:51:26,184 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11027326&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=c72107e5-85db-43c9-94c1-35a881b5669b
-2025-11-11 14:51:29,367 - INFO - Successfully opened https://shopee.sg/abc-cat.11011538.11027326?page=0&sortBy=sales
-2025-11-11 14:51:42,921 - INFO - Extracted 60 products from https://shopee.sg/abc-cat.11011538.11027326?page=0&sortBy=sales
-2025-11-11 14:51:42,922 - INFO - Opening category page: https://shopee.sg/abc-cat.11011538.11027326?page=1&sortBy=sales
-2025-11-11 14:51:47,425 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11027326&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=fa335d10-fb2e-4922-ae29-564083a561de
-2025-11-11 14:51:47,608 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11027326&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=fa335d10-fb2e-4922-ae29-564083a561de
-2025-11-11 14:51:50,628 - INFO - Successfully opened https://shopee.sg/abc-cat.11011538.11027326?page=1&sortBy=sales
-2025-11-11 14:51:58,472 - INFO - Extracted 60 products from https://shopee.sg/abc-cat.11011538.11027326?page=1&sortBy=sales
-2025-11-11 14:51:58,919 - ERROR - Error closing browser/context: Event loop is closed! Is Playwright already stopped?
-2025-11-11 14:54:59,483 - INFO - Using device 6 for parent_id 11012218
-2025-11-11 14:55:01,305 - INFO - Opening https://shopee.sg
-2025-11-11 14:55:04,414 - INFO - Successfully opened https://shopee.sg
-2025-11-11 14:55:04,415 - INFO - Using provided cookies from device
-2025-11-11 14:55:04,415 - INFO - Successfully parsed cookies JSON string into list
-2025-11-11 14:55:04,456 - INFO - Added 30 cookies.
-2025-11-11 14:55:09,969 - INFO - Page reloaded successfully
-2025-11-11 14:55:14,303 - INFO - Closed popup successfully
-2025-11-11 14:55:30,474 - INFO - Simulated human behavior on home page
-2025-11-11 14:55:30,474 - INFO - Opening category page: https://shopee.sg/abc-cat.11012218.11027395?page=0&sortBy=sales
-2025-11-11 14:55:34,242 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11027395&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=ef82a6ee-ebb5-4036-9e07-c99abb57f8a7
-2025-11-11 14:55:34,355 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11027395&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=ef82a6ee-ebb5-4036-9e07-c99abb57f8a7
-2025-11-11 14:55:38,486 - INFO - Successfully opened https://shopee.sg/abc-cat.11012218.11027395?page=0&sortBy=sales
-2025-11-11 14:55:57,538 - ERROR - Error processing API entry for https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11027395&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=ef82a6ee-ebb5-4036-9e07-c99abb57f8a7: 'NoneType' object has no attribute 'get'
-2025-11-11 14:55:57,538 - WARNING - No products found for page: https://shopee.sg/abc-cat.11012218.11027395?page=0&sortBy=sales
-2025-11-11 14:55:57,539 - INFO - Opening category page: https://shopee.sg/abc-cat.11012218.11027395?page=1&sortBy=sales
-2025-11-11 14:56:01,763 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11027395&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=7dd91887-adb2-4285-88ca-fb591c301c69
-2025-11-11 14:56:01,824 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11027395&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=7dd91887-adb2-4285-88ca-fb591c301c69
-2025-11-11 14:56:02,898 - INFO - Successfully opened https://shopee.sg/abc-cat.11012218.11027395?page=1&sortBy=sales
-2025-11-11 14:56:13,887 - ERROR - Error processing API entry for https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11027395&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=7dd91887-adb2-4285-88ca-fb591c301c69: 'NoneType' object is not iterable
-2025-11-11 14:56:13,888 - WARNING - No products found for page: https://shopee.sg/abc-cat.11012218.11027395?page=1&sortBy=sales
-2025-11-11 14:56:13,888 - INFO - Opening category page: https://shopee.sg/abc-cat.11012218.11012247?page=0&sortBy=sales
-2025-11-11 14:56:18,122 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012247&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=1d9dcd96-3854-4b27-9a3b-05998b4c0a1a
-2025-11-11 14:56:18,226 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012247&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=1d9dcd96-3854-4b27-9a3b-05998b4c0a1a
-2025-11-11 14:56:20,889 - INFO - Successfully opened https://shopee.sg/abc-cat.11012218.11012247?page=0&sortBy=sales
-2025-11-11 14:56:30,068 - ERROR - Error processing API entry for https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012247&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=1d9dcd96-3854-4b27-9a3b-05998b4c0a1a: 'NoneType' object has no attribute 'get'
-2025-11-11 14:56:30,068 - WARNING - No products found for page: https://shopee.sg/abc-cat.11012218.11012247?page=0&sortBy=sales
-2025-11-11 14:56:30,069 - INFO - Opening category page: https://shopee.sg/abc-cat.11012218.11012247?page=1&sortBy=sales
-2025-11-11 14:56:34,718 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012247&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=4b967069-a7c2-4175-94df-97171b3fffe0
-2025-11-11 14:56:34,778 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012247&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=4b967069-a7c2-4175-94df-97171b3fffe0
-2025-11-11 14:56:36,483 - INFO - Successfully opened https://shopee.sg/abc-cat.11012218.11012247?page=1&sortBy=sales
-2025-11-11 14:57:25,444 - ERROR - Error processing API entry for https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012247&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=4b967069-a7c2-4175-94df-97171b3fffe0: 'NoneType' object is not iterable
-2025-11-11 14:57:25,444 - WARNING - No products found for page: https://shopee.sg/abc-cat.11012218.11012247?page=1&sortBy=sales
-2025-11-11 14:57:25,444 - INFO - Opening category page: https://shopee.sg/abc-cat.11012218.11012230?page=0&sortBy=sales
-2025-11-11 14:57:29,833 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012230&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=1ba3c1d7-0402-43dc-9baa-43f6ed33bc57
-2025-11-11 14:57:29,877 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012230&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=1ba3c1d7-0402-43dc-9baa-43f6ed33bc57
-2025-11-11 14:57:31,096 - INFO - Successfully opened https://shopee.sg/abc-cat.11012218.11012230?page=0&sortBy=sales
-2025-11-11 14:57:48,217 - ERROR - Error processing API entry for https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012230&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=1ba3c1d7-0402-43dc-9baa-43f6ed33bc57: 'NoneType' object has no attribute 'get'
-2025-11-11 14:57:48,217 - WARNING - No products found for page: https://shopee.sg/abc-cat.11012218.11012230?page=0&sortBy=sales
-2025-11-11 14:57:48,217 - INFO - Opening category page: https://shopee.sg/abc-cat.11012218.11012230?page=1&sortBy=sales
-2025-11-11 14:57:52,680 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012230&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=a2cbf904-8b62-4c22-a2f4-bcc64fbbd250
-2025-11-11 14:57:52,698 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012230&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=a2cbf904-8b62-4c22-a2f4-bcc64fbbd250
-2025-11-11 14:57:53,491 - INFO - Successfully opened https://shopee.sg/abc-cat.11012218.11012230?page=1&sortBy=sales
-2025-11-11 14:58:04,065 - ERROR - Error processing API entry for https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012230&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=a2cbf904-8b62-4c22-a2f4-bcc64fbbd250: 'NoneType' object is not iterable
-2025-11-11 14:58:04,065 - WARNING - No products found for page: https://shopee.sg/abc-cat.11012218.11012230?page=1&sortBy=sales
-2025-11-11 14:58:04,065 - INFO - Opening category page: https://shopee.sg/abc-cat.11012218.11012219?page=0&sortBy=sales
-2025-11-11 14:58:06,657 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012219&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=4f5f8886-e619-40a3-8aa7-d9238b69e64d
-2025-11-11 14:58:06,676 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012219&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=4f5f8886-e619-40a3-8aa7-d9238b69e64d
-2025-11-11 14:58:08,732 - INFO - Successfully opened https://shopee.sg/abc-cat.11012218.11012219?page=0&sortBy=sales
-2025-11-11 14:58:10,651 - ERROR - Failed to scrape subcategory 11012219 under parent 11012218: Page.evaluate: Target page, context or browser has been closed
-2025-11-11 14:58:10,651 - INFO - Opening category page: https://shopee.sg/abc-cat.11012218.11027403?page=0&sortBy=sales
-2025-11-11 14:58:10,653 - ERROR - Failed to open https://shopee.sg/abc-cat.11012218.11027403?page=0&sortBy=sales: Page.goto: Connection closed while reading from the driver
-2025-11-11 14:58:10,653 - INFO - Opening category page: https://shopee.sg/abc-cat.11012218.11027403?page=1&sortBy=sales
-2025-11-11 14:58:10,654 - ERROR - Failed to open https://shopee.sg/abc-cat.11012218.11027403?page=1&sortBy=sales: Page.goto: Connection closed while reading from the driver
-2025-11-11 14:58:10,660 - ERROR - Error closing browser/context: Event loop is closed! Is Playwright already stopped?
+2025-11-11 15:50:38,305 - INFO - Using device 5 for parent_id 11013478
+2025-11-11 15:50:40,153 - INFO - Opening https://shopee.sg
+2025-11-11 15:50:47,955 - INFO - Successfully opened https://shopee.sg
+2025-11-11 15:50:47,955 - INFO - Using provided cookies from device
+2025-11-11 15:50:47,955 - INFO - Successfully parsed cookies JSON string into list
+2025-11-11 15:50:47,965 - INFO - Added 29 cookies.
+2025-11-11 15:50:50,362 - INFO - Page reloaded successfully
+2025-11-11 15:50:54,616 - INFO - Closed popup successfully
+2025-11-11 15:51:04,809 - INFO - Simulated human behavior on home page
+2025-11-11 15:51:04,809 - INFO - Opening category page: https://shopee.sg/abc-cat.11013478.11013528?page=0&sortBy=sales
+2025-11-11 15:51:09,601 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11013528&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=fd7254b6-d294-432f-b878-ac6a05f00e24
+2025-11-11 15:51:10,825 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11013528&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=fd7254b6-d294-432f-b878-ac6a05f00e24
+2025-11-11 15:51:13,994 - INFO - Successfully opened https://shopee.sg/abc-cat.11013478.11013528?page=0&sortBy=sales
+2025-11-11 15:51:17,475 - INFO - Extracted 60 products from https://shopee.sg/abc-cat.11013478.11013528?page=0&sortBy=sales
+2025-11-11 15:51:17,475 - INFO - Opening category page: https://shopee.sg/abc-cat.11013478.11013528?page=1&sortBy=sales
+2025-11-11 15:51:20,144 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11013528&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=851c493b-8baf-4149-bf6b-c3bfcdc43767
+2025-11-11 15:51:20,191 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11013528&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=851c493b-8baf-4149-bf6b-c3bfcdc43767
+2025-11-11 15:51:22,273 - INFO - Successfully opened https://shopee.sg/abc-cat.11013478.11013528?page=1&sortBy=sales
+2025-11-11 15:52:08,473 - INFO - Extracted 60 products from https://shopee.sg/abc-cat.11013478.11013528?page=1&sortBy=sales
+2025-11-11 15:52:08,474 - INFO - Opening category page: https://shopee.sg/abc-cat.11013478.11013524?page=0&sortBy=sales
+2025-11-11 15:52:11,244 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11013524&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=ef736d15-f555-4c78-abd2-ae95d2d996a6
+2025-11-11 15:52:11,392 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11013524&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=ef736d15-f555-4c78-abd2-ae95d2d996a6
+2025-11-11 15:52:13,203 - INFO - Successfully opened https://shopee.sg/abc-cat.11013478.11013524?page=0&sortBy=sales
+2025-11-11 15:52:30,419 - INFO - Extracted 60 products from https://shopee.sg/abc-cat.11013478.11013524?page=0&sortBy=sales
+2025-11-11 15:52:30,420 - INFO - Opening category page: https://shopee.sg/abc-cat.11013478.11013524?page=1&sortBy=sales
+2025-11-11 15:52:32,702 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11013524&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=2bdb3788-bb64-4660-9248-9342ca9d0d81
+2025-11-11 15:52:32,863 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11013524&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=2bdb3788-bb64-4660-9248-9342ca9d0d81
+2025-11-11 15:52:34,672 - INFO - Successfully opened https://shopee.sg/abc-cat.11013478.11013524?page=1&sortBy=sales
+2025-11-11 15:52:52,491 - INFO - Extracted 60 products from https://shopee.sg/abc-cat.11013478.11013524?page=1&sortBy=sales
+2025-11-11 15:52:52,491 - INFO - Opening category page: https://shopee.sg/abc-cat.11013478.11013521?page=0&sortBy=sales
+2025-11-11 15:52:54,643 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11013521&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=8349eb5b-2080-4d84-90ef-b0d8b2569531
+2025-11-11 15:52:54,802 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11013521&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=8349eb5b-2080-4d84-90ef-b0d8b2569531
+2025-11-11 15:52:56,608 - INFO - Successfully opened https://shopee.sg/abc-cat.11013478.11013521?page=0&sortBy=sales
+2025-11-11 15:53:13,626 - INFO - Extracted 60 products from https://shopee.sg/abc-cat.11013478.11013521?page=0&sortBy=sales
+2025-11-11 15:53:13,626 - INFO - Opening category page: https://shopee.sg/abc-cat.11013478.11013521?page=1&sortBy=sales
+2025-11-11 15:53:16,341 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11013521&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=f7206772-d2b6-4c51-aede-9c24e79b3033
+2025-11-11 15:53:16,495 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11013521&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=f7206772-d2b6-4c51-aede-9c24e79b3033
+2025-11-11 15:53:18,327 - INFO - Successfully opened https://shopee.sg/abc-cat.11013478.11013521?page=1&sortBy=sales
+2025-11-11 15:53:22,064 - INFO - Extracted 60 products from https://shopee.sg/abc-cat.11013478.11013521?page=1&sortBy=sales
+2025-11-11 15:53:22,064 - INFO - Opening category page: https://shopee.sg/abc-cat.11013478.11013517?page=0&sortBy=sales
+2025-11-11 15:53:24,273 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11013517&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=898924cd-0903-45ed-bace-8565f55bcc10
+2025-11-11 15:53:24,383 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11013517&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=898924cd-0903-45ed-bace-8565f55bcc10
+2025-11-11 15:53:26,217 - INFO - Successfully opened https://shopee.sg/abc-cat.11013478.11013517?page=0&sortBy=sales
+2025-11-11 15:53:36,656 - INFO - Extracted 60 products from https://shopee.sg/abc-cat.11013478.11013517?page=0&sortBy=sales
+2025-11-11 15:53:36,657 - INFO - Opening category page: https://shopee.sg/abc-cat.11013478.11013517?page=1&sortBy=sales
+2025-11-11 15:53:38,966 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11013517&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=3c063730-8d9e-48f7-a405-5433a4942c29
+2025-11-11 15:53:39,064 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11013517&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=3c063730-8d9e-48f7-a405-5433a4942c29
+2025-11-11 15:53:40,886 - INFO - Successfully opened https://shopee.sg/abc-cat.11013478.11013517?page=1&sortBy=sales
+2025-11-11 15:53:44,319 - INFO - Extracted 60 products from https://shopee.sg/abc-cat.11013478.11013517?page=1&sortBy=sales
+2025-11-11 15:53:44,320 - INFO - Opening category page: https://shopee.sg/abc-cat.11013478.11013494?page=0&sortBy=sales
+2025-11-11 15:53:46,338 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11013494&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=85b6880d-aeff-42c1-ae69-d80daaa49c2b
+2025-11-11 15:53:46,437 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11013494&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=85b6880d-aeff-42c1-ae69-d80daaa49c2b
+2025-11-11 15:53:48,252 - INFO - Successfully opened https://shopee.sg/abc-cat.11013478.11013494?page=0&sortBy=sales
+2025-11-11 15:54:36,812 - INFO - Extracted 60 products from https://shopee.sg/abc-cat.11013478.11013494?page=0&sortBy=sales
+2025-11-11 15:54:36,812 - INFO - Opening category page: https://shopee.sg/abc-cat.11013478.11013494?page=1&sortBy=sales
+2025-11-11 15:54:39,051 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11013494&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=0dfdb675-8291-4fe4-baf6-8989c4cd9bd4
+2025-11-11 15:54:39,145 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11013494&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=0dfdb675-8291-4fe4-baf6-8989c4cd9bd4
+2025-11-11 15:54:40,997 - INFO - Successfully opened https://shopee.sg/abc-cat.11013478.11013494?page=1&sortBy=sales
+2025-11-11 15:54:51,726 - INFO - Extracted 60 products from https://shopee.sg/abc-cat.11013478.11013494?page=1&sortBy=sales
+2025-11-11 15:54:51,727 - INFO - Opening category page: https://shopee.sg/abc-cat.11013478.11013491?page=0&sortBy=sales
+2025-11-11 15:54:53,738 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11013491&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=ab89c691-90a3-4bca-a2fb-c8c4ea900ba5
+2025-11-11 15:54:53,830 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11013491&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=ab89c691-90a3-4bca-a2fb-c8c4ea900ba5
+2025-11-11 15:54:55,640 - INFO - Successfully opened https://shopee.sg/abc-cat.11013478.11013491?page=0&sortBy=sales
+2025-11-11 15:55:02,916 - INFO - Extracted 60 products from https://shopee.sg/abc-cat.11013478.11013491?page=0&sortBy=sales
+2025-11-11 15:55:02,916 - INFO - Opening category page: https://shopee.sg/abc-cat.11013478.11013491?page=1&sortBy=sales
+2025-11-11 15:55:04,998 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11013491&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=42270f4c-6bdd-4db3-ba29-17a4720551cf
+2025-11-11 15:55:05,098 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11013491&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=42270f4c-6bdd-4db3-ba29-17a4720551cf
+2025-11-11 15:55:06,938 - INFO - Successfully opened https://shopee.sg/abc-cat.11013478.11013491?page=1&sortBy=sales
+2025-11-11 15:55:11,000 - INFO - Extracted 60 products from https://shopee.sg/abc-cat.11013478.11013491?page=1&sortBy=sales
+2025-11-11 15:55:11,001 - INFO - Opening category page: https://shopee.sg/abc-cat.11013478.11013484?page=0&sortBy=sales
+2025-11-11 15:55:12,968 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11013484&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=995911b1-4bd3-4872-8905-da14bfdbd67f
+2025-11-11 15:55:13,065 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11013484&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=995911b1-4bd3-4872-8905-da14bfdbd67f
+2025-11-11 15:55:15,406 - INFO - Successfully opened https://shopee.sg/abc-cat.11013478.11013484?page=0&sortBy=sales
+2025-11-11 15:55:32,882 - INFO - Extracted 60 products from https://shopee.sg/abc-cat.11013478.11013484?page=0&sortBy=sales
+2025-11-11 15:55:32,883 - INFO - Opening category page: https://shopee.sg/abc-cat.11013478.11013484?page=1&sortBy=sales
+2025-11-11 15:55:35,000 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11013484&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=8a40b935-9b47-4ec4-a76d-75b1f0aa4f00
+2025-11-11 15:55:35,071 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11013484&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=8a40b935-9b47-4ec4-a76d-75b1f0aa4f00
+2025-11-11 15:55:36,917 - INFO - Successfully opened https://shopee.sg/abc-cat.11013478.11013484?page=1&sortBy=sales
+2025-11-11 15:55:53,022 - INFO - Extracted 60 products from https://shopee.sg/abc-cat.11013478.11013484?page=1&sortBy=sales
+2025-11-11 15:55:53,022 - INFO - Opening category page: https://shopee.sg/abc-cat.11013478.11013479?page=0&sortBy=sales
+2025-11-11 15:55:55,257 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11013479&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=07da9736-c76c-4eb6-a9f6-7068d0553e64
+2025-11-11 15:55:55,393 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11013479&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=07da9736-c76c-4eb6-a9f6-7068d0553e64
+2025-11-11 15:55:57,231 - INFO - Successfully opened https://shopee.sg/abc-cat.11013478.11013479?page=0&sortBy=sales
+2025-11-11 15:56:01,816 - INFO - Extracted 60 products from https://shopee.sg/abc-cat.11013478.11013479?page=0&sortBy=sales
+2025-11-11 15:56:01,816 - INFO - Opening category page: https://shopee.sg/abc-cat.11013478.11013479?page=1&sortBy=sales
+2025-11-11 15:56:03,706 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11013479&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=88265c48-2554-42fe-9033-020ddd103c12
+2025-11-11 15:56:03,763 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11013479&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=88265c48-2554-42fe-9033-020ddd103c12
+2025-11-11 15:56:05,591 - INFO - Successfully opened https://shopee.sg/abc-cat.11013478.11013479?page=1&sortBy=sales
+2025-11-11 15:56:08,702 - INFO - Extracted 60 products from https://shopee.sg/abc-cat.11013478.11013479?page=1&sortBy=sales
+2025-11-11 15:56:08,991 - ERROR - Error closing browser/context: Event loop is closed! Is Playwright already stopped?
+2025-11-11 15:59:09,145 - INFO - Using device 6 for parent_id 11012018
+2025-11-11 15:59:09,952 - INFO - Opening https://shopee.sg
+2025-11-11 15:59:13,483 - INFO - Successfully opened https://shopee.sg
+2025-11-11 15:59:13,483 - INFO - Using provided cookies from device
+2025-11-11 15:59:13,484 - INFO - Successfully parsed cookies JSON string into list
+2025-11-11 15:59:13,513 - INFO - Added 30 cookies.
+2025-11-11 15:59:15,702 - INFO - Page reloaded successfully
+2025-11-11 15:59:22,715 - INFO - No popup found or error closing popup
+2025-11-11 15:59:27,871 - INFO - Simulated human behavior on home page
+2025-11-11 15:59:27,871 - INFO - Opening category page: https://shopee.sg/abc-cat.11012018.11012210?page=0&sortBy=sales
+2025-11-11 15:59:30,236 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012210&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=9e44c1dd-977f-4518-836e-670af66e0d76
+2025-11-11 15:59:30,287 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012210&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=9e44c1dd-977f-4518-836e-670af66e0d76
+2025-11-11 15:59:31,331 - INFO - Successfully opened https://shopee.sg/abc-cat.11012018.11012210?page=0&sortBy=sales
+2025-11-11 15:59:36,295 - INFO - Extracted 40 products from https://shopee.sg/abc-cat.11012018.11012210?page=0&sortBy=sales
+2025-11-11 15:59:36,295 - INFO - Opening category page: https://shopee.sg/abc-cat.11012018.11012210?page=1&sortBy=sales
+2025-11-11 15:59:38,376 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012210&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=2e64c6f0-df06-454d-993f-c391ff100fe3
+2025-11-11 15:59:38,397 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012210&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=2e64c6f0-df06-454d-993f-c391ff100fe3
+2025-11-11 15:59:46,388 - INFO - Successfully opened https://shopee.sg/abc-cat.11012018.11012210?page=1&sortBy=sales
+2025-11-11 16:00:21,064 - ERROR - Error processing API entry for https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012210&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=2e64c6f0-df06-454d-993f-c391ff100fe3: 'NoneType' object is not iterable
+2025-11-11 16:00:21,065 - WARNING - No products found for page: https://shopee.sg/abc-cat.11012018.11012210?page=1&sortBy=sales
+2025-11-11 16:00:21,065 - INFO - Opening category page: https://shopee.sg/abc-cat.11012018.11012190?page=0&sortBy=sales
+2025-11-11 16:00:23,435 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012190&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=1706ad52-2bbe-4f1a-8043-ed48dc37fe01
+2025-11-11 16:00:23,510 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012190&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=1706ad52-2bbe-4f1a-8043-ed48dc37fe01
+2025-11-11 16:00:25,318 - INFO - Successfully opened https://shopee.sg/abc-cat.11012018.11012190?page=0&sortBy=sales
+2025-11-11 16:00:28,777 - INFO - Extracted 40 products from https://shopee.sg/abc-cat.11012018.11012190?page=0&sortBy=sales
+2025-11-11 16:00:28,777 - INFO - Opening category page: https://shopee.sg/abc-cat.11012018.11012190?page=1&sortBy=sales
+2025-11-11 16:00:30,752 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012190&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=c9b24575-7987-44ac-a57a-0fad31c6d37f
+2025-11-11 16:00:30,757 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012190&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=c9b24575-7987-44ac-a57a-0fad31c6d37f
+2025-11-11 16:00:31,280 - INFO - Successfully opened https://shopee.sg/abc-cat.11012018.11012190?page=1&sortBy=sales
+2025-11-11 16:02:12,042 - ERROR - Error processing API entry for https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012190&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=c9b24575-7987-44ac-a57a-0fad31c6d37f: 'NoneType' object is not iterable
+2025-11-11 16:02:12,043 - WARNING - No products found for page: https://shopee.sg/abc-cat.11012018.11012190?page=1&sortBy=sales
+2025-11-11 16:02:12,043 - INFO - Opening category page: https://shopee.sg/abc-cat.11012018.11012182?page=0&sortBy=sales
+2025-11-11 16:02:14,377 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012182&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=6368bc8d-efa0-481a-8b26-c598bf47d008
+2025-11-11 16:02:14,464 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012182&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=6368bc8d-efa0-481a-8b26-c598bf47d008
+2025-11-11 16:02:16,292 - INFO - Successfully opened https://shopee.sg/abc-cat.11012018.11012182?page=0&sortBy=sales
+2025-11-11 16:02:33,027 - INFO - Extracted 40 products from https://shopee.sg/abc-cat.11012018.11012182?page=0&sortBy=sales
+2025-11-11 16:02:33,027 - INFO - Opening category page: https://shopee.sg/abc-cat.11012018.11012182?page=1&sortBy=sales
+2025-11-11 16:02:35,375 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012182&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=18653229-e867-40aa-9d5a-f25677fc4d2e
+2025-11-11 16:02:35,390 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012182&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=18653229-e867-40aa-9d5a-f25677fc4d2e
+2025-11-11 16:02:35,926 - INFO - Successfully opened https://shopee.sg/abc-cat.11012018.11012182?page=1&sortBy=sales
+2025-11-11 16:02:56,716 - ERROR - Error processing API entry for https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012182&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=18653229-e867-40aa-9d5a-f25677fc4d2e: 'NoneType' object is not iterable
+2025-11-11 16:02:56,718 - WARNING - No products found for page: https://shopee.sg/abc-cat.11012018.11012182?page=1&sortBy=sales
+2025-11-11 16:02:56,719 - INFO - Opening category page: https://shopee.sg/abc-cat.11012018.11012173?page=0&sortBy=sales
+2025-11-11 16:03:00,872 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012173&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=4b3b6256-1503-4ed8-840e-eb0d19049082
+2025-11-11 16:03:00,944 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012173&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=4b3b6256-1503-4ed8-840e-eb0d19049082
+2025-11-11 16:03:03,000 - INFO - Successfully opened https://shopee.sg/abc-cat.11012018.11012173?page=0&sortBy=sales
+2025-11-11 16:03:07,516 - INFO - Extracted 40 products from https://shopee.sg/abc-cat.11012018.11012173?page=0&sortBy=sales
+2025-11-11 16:03:07,516 - INFO - Opening category page: https://shopee.sg/abc-cat.11012018.11012173?page=1&sortBy=sales
+2025-11-11 16:03:11,318 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012173&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=a34cd09c-35b9-476d-ba3a-6baeada199c5
+2025-11-11 16:03:11,360 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012173&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=a34cd09c-35b9-476d-ba3a-6baeada199c5
+2025-11-11 16:03:12,593 - INFO - Successfully opened https://shopee.sg/abc-cat.11012018.11012173?page=1&sortBy=sales
+2025-11-11 16:03:26,197 - ERROR - Error processing API entry for https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012173&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=a34cd09c-35b9-476d-ba3a-6baeada199c5: 'NoneType' object is not iterable
+2025-11-11 16:03:26,198 - WARNING - No products found for page: https://shopee.sg/abc-cat.11012018.11012173?page=1&sortBy=sales
+2025-11-11 16:03:26,198 - INFO - Opening category page: https://shopee.sg/abc-cat.11012018.11012156?page=0&sortBy=sales
+2025-11-11 16:03:28,632 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012156&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=6239c07e-b63a-4754-81eb-aa51446c00f3
+2025-11-11 16:03:28,716 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012156&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=6239c07e-b63a-4754-81eb-aa51446c00f3
+2025-11-11 16:03:30,511 - INFO - Successfully opened https://shopee.sg/abc-cat.11012018.11012156?page=0&sortBy=sales
+2025-11-11 16:03:47,387 - INFO - Extracted 40 products from https://shopee.sg/abc-cat.11012018.11012156?page=0&sortBy=sales
+2025-11-11 16:03:47,387 - INFO - Opening category page: https://shopee.sg/abc-cat.11012018.11012156?page=1&sortBy=sales
+2025-11-11 16:03:49,619 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012156&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=5e1bf012-e4c9-4a6a-a2cd-bcc0a728b684
+2025-11-11 16:03:49,633 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012156&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=5e1bf012-e4c9-4a6a-a2cd-bcc0a728b684
+2025-11-11 16:03:50,145 - INFO - Successfully opened https://shopee.sg/abc-cat.11012018.11012156?page=1&sortBy=sales
+2025-11-11 16:05:01,999 - ERROR - Error processing API entry for https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012156&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=5e1bf012-e4c9-4a6a-a2cd-bcc0a728b684: 'NoneType' object is not iterable
+2025-11-11 16:05:02,000 - WARNING - No products found for page: https://shopee.sg/abc-cat.11012018.11012156?page=1&sortBy=sales
+2025-11-11 16:05:02,000 - INFO - Opening category page: https://shopee.sg/abc-cat.11012018.11012140?page=0&sortBy=sales
+2025-11-11 16:05:04,364 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012140&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=23f3561d-4d45-409e-9420-40b8b1a223e2
+2025-11-11 16:05:04,455 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012140&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=23f3561d-4d45-409e-9420-40b8b1a223e2
+2025-11-11 16:05:05,263 - INFO - Successfully opened https://shopee.sg/abc-cat.11012018.11012140?page=0&sortBy=sales
+2025-11-11 16:05:12,341 - INFO - Extracted 40 products from https://shopee.sg/abc-cat.11012018.11012140?page=0&sortBy=sales
+2025-11-11 16:05:12,341 - INFO - Opening category page: https://shopee.sg/abc-cat.11012018.11012140?page=1&sortBy=sales
+2025-11-11 16:05:14,371 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012140&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=ee4c7449-23c9-40ca-a751-efe48ce6846d
+2025-11-11 16:05:14,390 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012140&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=ee4c7449-23c9-40ca-a751-efe48ce6846d
+2025-11-11 16:05:14,904 - INFO - Successfully opened https://shopee.sg/abc-cat.11012018.11012140?page=1&sortBy=sales
+2025-11-11 16:05:45,940 - ERROR - Error processing API entry for https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012140&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=ee4c7449-23c9-40ca-a751-efe48ce6846d: 'NoneType' object is not iterable
+2025-11-11 16:05:45,940 - WARNING - No products found for page: https://shopee.sg/abc-cat.11012018.11012140?page=1&sortBy=sales
+2025-11-11 16:05:45,940 - INFO - Opening category page: https://shopee.sg/abc-cat.11012018.11012132?page=0&sortBy=sales
+2025-11-11 16:05:48,143 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012132&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=f6071d6b-22a2-4ff6-8427-03cdecebd41c
+2025-11-11 16:05:48,227 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012132&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=f6071d6b-22a2-4ff6-8427-03cdecebd41c
+2025-11-11 16:05:49,007 - INFO - Successfully opened https://shopee.sg/abc-cat.11012018.11012132?page=0&sortBy=sales
+2025-11-11 16:06:20,789 - INFO - Extracted 40 products from https://shopee.sg/abc-cat.11012018.11012132?page=0&sortBy=sales
+2025-11-11 16:06:20,790 - INFO - Opening category page: https://shopee.sg/abc-cat.11012018.11012132?page=1&sortBy=sales
+2025-11-11 16:06:23,295 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012132&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=ba83234a-5245-4c83-9a01-66158061703f
+2025-11-11 16:06:23,308 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012132&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=ba83234a-5245-4c83-9a01-66158061703f
+2025-11-11 16:06:23,823 - INFO - Successfully opened https://shopee.sg/abc-cat.11012018.11012132?page=1&sortBy=sales
+2025-11-11 16:06:54,876 - ERROR - Error processing API entry for https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012132&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=ba83234a-5245-4c83-9a01-66158061703f: 'NoneType' object is not iterable
+2025-11-11 16:06:54,877 - WARNING - No products found for page: https://shopee.sg/abc-cat.11012018.11012132?page=1&sortBy=sales
+2025-11-11 16:06:54,879 - INFO - Opening category page: https://shopee.sg/abc-cat.11012018.11012114?page=0&sortBy=sales
+2025-11-11 16:06:57,192 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012114&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=cc20da56-adb0-4174-a2bd-80ff188911d3
+2025-11-11 16:06:57,226 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012114&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=cc20da56-adb0-4174-a2bd-80ff188911d3
+2025-11-11 16:06:59,093 - INFO - Successfully opened https://shopee.sg/abc-cat.11012018.11012114?page=0&sortBy=sales
+2025-11-11 16:09:02,892 - INFO - Extracted 40 products from https://shopee.sg/abc-cat.11012018.11012114?page=0&sortBy=sales
+2025-11-11 16:09:02,893 - INFO - Opening category page: https://shopee.sg/abc-cat.11012018.11012114?page=1&sortBy=sales
+2025-11-11 16:09:05,464 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012114&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=dde30beb-2d41-4879-a514-3bfc530cee1f
+2025-11-11 16:09:05,482 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012114&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=dde30beb-2d41-4879-a514-3bfc530cee1f
+2025-11-11 16:09:06,003 - INFO - Successfully opened https://shopee.sg/abc-cat.11012018.11012114?page=1&sortBy=sales
+2025-11-11 16:10:21,630 - ERROR - Error processing API entry for https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012114&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=dde30beb-2d41-4879-a514-3bfc530cee1f: 'NoneType' object is not iterable
+2025-11-11 16:10:21,630 - WARNING - No products found for page: https://shopee.sg/abc-cat.11012018.11012114?page=1&sortBy=sales
+2025-11-11 16:10:21,630 - INFO - Opening category page: https://shopee.sg/abc-cat.11012018.11012107?page=0&sortBy=sales
+2025-11-11 16:10:24,178 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012107&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=f8aceb6a-1103-4def-b836-02017a6acf57
+2025-11-11 16:10:24,272 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012107&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=f8aceb6a-1103-4def-b836-02017a6acf57
+2025-11-11 16:10:26,313 - INFO - Successfully opened https://shopee.sg/abc-cat.11012018.11012107?page=0&sortBy=sales
+2025-11-11 16:10:29,626 - INFO - Extracted 40 products from https://shopee.sg/abc-cat.11012018.11012107?page=0&sortBy=sales
+2025-11-11 16:10:29,627 - INFO - Opening category page: https://shopee.sg/abc-cat.11012018.11012107?page=1&sortBy=sales
+2025-11-11 16:10:31,494 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012107&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=48487cfa-3bbf-444f-a554-f7983c862168
+2025-11-11 16:10:31,511 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012107&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=48487cfa-3bbf-444f-a554-f7983c862168
+2025-11-11 16:10:32,033 - INFO - Successfully opened https://shopee.sg/abc-cat.11012018.11012107?page=1&sortBy=sales
+2025-11-11 16:10:37,664 - ERROR - Error processing API entry for https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012107&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=48487cfa-3bbf-444f-a554-f7983c862168: 'NoneType' object is not iterable
+2025-11-11 16:10:37,664 - WARNING - No products found for page: https://shopee.sg/abc-cat.11012018.11012107?page=1&sortBy=sales
+2025-11-11 16:10:37,665 - INFO - Opening category page: https://shopee.sg/abc-cat.11012018.11012087?page=0&sortBy=sales
+2025-11-11 16:10:39,642 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012087&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=61bc23c7-8607-4ebe-8184-d3c0ff10c786
+2025-11-11 16:10:39,664 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012087&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=61bc23c7-8607-4ebe-8184-d3c0ff10c786
+2025-11-11 16:10:40,762 - INFO - Successfully opened https://shopee.sg/abc-cat.11012018.11012087?page=0&sortBy=sales
+2025-11-11 16:10:44,165 - INFO - Extracted 40 products from https://shopee.sg/abc-cat.11012018.11012087?page=0&sortBy=sales
+2025-11-11 16:10:44,166 - INFO - Opening category page: https://shopee.sg/abc-cat.11012018.11012087?page=1&sortBy=sales
+2025-11-11 16:10:46,160 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012087&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=2807bed5-7db6-41c6-aa8b-19dc552fb6fa
+2025-11-11 16:10:46,169 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012087&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=2807bed5-7db6-41c6-aa8b-19dc552fb6fa
+2025-11-11 16:10:46,680 - INFO - Successfully opened https://shopee.sg/abc-cat.11012018.11012087?page=1&sortBy=sales
+2025-11-11 16:11:24,360 - ERROR - Error processing API entry for https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012087&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=2807bed5-7db6-41c6-aa8b-19dc552fb6fa: 'NoneType' object is not iterable
+2025-11-11 16:11:24,360 - WARNING - No products found for page: https://shopee.sg/abc-cat.11012018.11012087?page=1&sortBy=sales
+2025-11-11 16:11:24,361 - INFO - Opening category page: https://shopee.sg/abc-cat.11012018.11012066?page=0&sortBy=sales
+2025-11-11 16:11:27,231 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012066&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=ec6680f2-4a69-443a-a8d6-678b5c7e8680
+2025-11-11 16:11:27,381 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012066&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=ec6680f2-4a69-443a-a8d6-678b5c7e8680
+2025-11-11 16:11:29,217 - INFO - Successfully opened https://shopee.sg/abc-cat.11012018.11012066?page=0&sortBy=sales
+2025-11-11 16:11:50,099 - INFO - Extracted 40 products from https://shopee.sg/abc-cat.11012018.11012066?page=0&sortBy=sales
+2025-11-11 16:11:50,099 - INFO - Opening category page: https://shopee.sg/abc-cat.11012018.11012066?page=1&sortBy=sales
+2025-11-11 16:11:52,385 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012066&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=12a8249d-d912-4c40-a7df-77318f0c55ef
+2025-11-11 16:11:52,393 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012066&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=12a8249d-d912-4c40-a7df-77318f0c55ef
+2025-11-11 16:11:52,919 - INFO - Successfully opened https://shopee.sg/abc-cat.11012018.11012066?page=1&sortBy=sales
+2025-11-11 16:11:57,412 - ERROR - Error processing API entry for https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012066&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=12a8249d-d912-4c40-a7df-77318f0c55ef: 'NoneType' object is not iterable
+2025-11-11 16:11:57,413 - WARNING - No products found for page: https://shopee.sg/abc-cat.11012018.11012066?page=1&sortBy=sales
+2025-11-11 16:11:57,413 - INFO - Opening category page: https://shopee.sg/abc-cat.11012018.11012050?page=0&sortBy=sales
+2025-11-11 16:11:59,375 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012050&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=bb23b3d5-889d-40f0-94ad-33d96d81fcf5
+2025-11-11 16:11:59,397 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012050&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=bb23b3d5-889d-40f0-94ad-33d96d81fcf5
+2025-11-11 16:12:01,185 - INFO - Successfully opened https://shopee.sg/abc-cat.11012018.11012050?page=0&sortBy=sales
+2025-11-11 16:12:10,459 - INFO - Extracted 40 products from https://shopee.sg/abc-cat.11012018.11012050?page=0&sortBy=sales
+2025-11-11 16:12:10,459 - INFO - Opening category page: https://shopee.sg/abc-cat.11012018.11012050?page=1&sortBy=sales
+2025-11-11 16:12:12,469 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012050&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=cda12ef8-7b37-416f-bed1-a746d130c1ac
+2025-11-11 16:12:12,481 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012050&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=cda12ef8-7b37-416f-bed1-a746d130c1ac
+2025-11-11 16:12:13,014 - INFO - Successfully opened https://shopee.sg/abc-cat.11012018.11012050?page=1&sortBy=sales
+2025-11-11 16:12:44,165 - ERROR - Error processing API entry for https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012050&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=cda12ef8-7b37-416f-bed1-a746d130c1ac: 'NoneType' object is not iterable
+2025-11-11 16:12:44,166 - WARNING - No products found for page: https://shopee.sg/abc-cat.11012018.11012050?page=1&sortBy=sales
+2025-11-11 16:12:44,166 - INFO - Opening category page: https://shopee.sg/abc-cat.11012018.11012041?page=0&sortBy=sales
+2025-11-11 16:12:46,574 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012041&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=bf8f4f95-bce3-4370-bac8-596e188db1f7
+2025-11-11 16:12:46,664 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012041&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=bf8f4f95-bce3-4370-bac8-596e188db1f7
+2025-11-11 16:12:48,484 - INFO - Successfully opened https://shopee.sg/abc-cat.11012018.11012041?page=0&sortBy=sales
+2025-11-11 16:12:54,119 - INFO - Extracted 40 products from https://shopee.sg/abc-cat.11012018.11012041?page=0&sortBy=sales
+2025-11-11 16:12:54,119 - INFO - Opening category page: https://shopee.sg/abc-cat.11012018.11012041?page=1&sortBy=sales
+2025-11-11 16:12:56,401 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012041&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=8c2acf90-08bc-48f2-a9c9-be327c9201e2
+2025-11-11 16:12:56,409 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012041&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=8c2acf90-08bc-48f2-a9c9-be327c9201e2
+2025-11-11 16:12:56,919 - INFO - Successfully opened https://shopee.sg/abc-cat.11012018.11012041?page=1&sortBy=sales
+2025-11-11 16:13:06,856 - ERROR - Error processing API entry for https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012041&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=8c2acf90-08bc-48f2-a9c9-be327c9201e2: 'NoneType' object is not iterable
+2025-11-11 16:13:06,856 - WARNING - No products found for page: https://shopee.sg/abc-cat.11012018.11012041?page=1&sortBy=sales
+2025-11-11 16:13:06,856 - INFO - Opening category page: https://shopee.sg/abc-cat.11012018.11012028?page=0&sortBy=sales
+2025-11-11 16:13:09,146 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012028&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=ea9bde2e-8776-49d1-a735-f5302252a950
+2025-11-11 16:13:09,239 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012028&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=ea9bde2e-8776-49d1-a735-f5302252a950
+2025-11-11 16:13:10,191 - INFO - Successfully opened https://shopee.sg/abc-cat.11012018.11012028?page=0&sortBy=sales
+2025-11-11 16:13:21,415 - INFO - Extracted 40 products from https://shopee.sg/abc-cat.11012018.11012028?page=0&sortBy=sales
+2025-11-11 16:13:21,415 - INFO - Opening category page: https://shopee.sg/abc-cat.11012018.11012028?page=1&sortBy=sales
+2025-11-11 16:13:23,714 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012028&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=2f335261-94df-449c-bce7-8efba4d0659c
+2025-11-11 16:13:23,736 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012028&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=2f335261-94df-449c-bce7-8efba4d0659c
+2025-11-11 16:13:24,247 - INFO - Successfully opened https://shopee.sg/abc-cat.11012018.11012028?page=1&sortBy=sales
+2025-11-11 16:13:29,627 - ERROR - Error processing API entry for https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012028&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=2f335261-94df-449c-bce7-8efba4d0659c: 'NoneType' object is not iterable
+2025-11-11 16:13:29,627 - WARNING - No products found for page: https://shopee.sg/abc-cat.11012018.11012028?page=1&sortBy=sales
+2025-11-11 16:13:29,628 - INFO - Opening category page: https://shopee.sg/abc-cat.11012018.11012021?page=0&sortBy=sales
+2025-11-11 16:13:31,609 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012021&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=a42af845-6fe1-435b-9f29-93b85d9ef246
+2025-11-11 16:13:31,633 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012021&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=a42af845-6fe1-435b-9f29-93b85d9ef246
+2025-11-11 16:13:32,588 - INFO - Successfully opened https://shopee.sg/abc-cat.11012018.11012021?page=0&sortBy=sales
+2025-11-11 16:14:19,688 - INFO - Extracted 40 products from https://shopee.sg/abc-cat.11012018.11012021?page=0&sortBy=sales
+2025-11-11 16:14:19,688 - INFO - Opening category page: https://shopee.sg/abc-cat.11012018.11012021?page=1&sortBy=sales
+2025-11-11 16:14:21,827 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012021&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=dfb1e051-92a6-4c28-b38e-9ec3454f7b73
+2025-11-11 16:14:21,830 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012021&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=dfb1e051-92a6-4c28-b38e-9ec3454f7b73
+2025-11-11 16:14:22,349 - INFO - Successfully opened https://shopee.sg/abc-cat.11012018.11012021?page=1&sortBy=sales
+2025-11-11 16:14:57,166 - ERROR - Error processing API entry for https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11012021&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=dfb1e051-92a6-4c28-b38e-9ec3454f7b73: 'NoneType' object is not iterable
+2025-11-11 16:14:57,166 - WARNING - No products found for page: https://shopee.sg/abc-cat.11012018.11012021?page=1&sortBy=sales
+2025-11-11 16:14:57,167 - INFO - Opening category page: https://shopee.sg/abc-cat.11012018.11027392?page=0&sortBy=sales
+2025-11-11 16:14:59,415 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11027392&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=75507b17-ed45-4365-a57e-7dd5d6d79f5f
+2025-11-11 16:14:59,513 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11027392&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=75507b17-ed45-4365-a57e-7dd5d6d79f5f
+2025-11-11 16:15:01,357 - INFO - Successfully opened https://shopee.sg/abc-cat.11012018.11027392?page=0&sortBy=sales
+2025-11-11 16:15:49,881 - INFO - Extracted 40 products from https://shopee.sg/abc-cat.11012018.11027392?page=0&sortBy=sales
+2025-11-11 16:15:49,881 - INFO - Opening category page: https://shopee.sg/abc-cat.11012018.11027392?page=1&sortBy=sales
+2025-11-11 16:15:52,034 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11027392&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=6bef0468-b039-4112-9138-72f374283384
+2025-11-11 16:15:52,038 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11027392&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=6bef0468-b039-4112-9138-72f374283384
+2025-11-11 16:15:52,562 - INFO - Successfully opened https://shopee.sg/abc-cat.11012018.11027392?page=1&sortBy=sales
+2025-11-11 16:16:34,957 - ERROR - Error processing API entry for https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11027392&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=6bef0468-b039-4112-9138-72f374283384: 'NoneType' object is not iterable
+2025-11-11 16:16:34,960 - WARNING - No products found for page: https://shopee.sg/abc-cat.11012018.11027392?page=1&sortBy=sales
+2025-11-11 16:16:35,256 - ERROR - Error closing browser/context: Event loop is closed! Is Playwright already stopped?
+2025-11-11 16:19:35,399 - INFO - Using device 7 for parent_id 11011760
+2025-11-11 16:19:36,067 - INFO - Opening https://shopee.sg
+2025-11-11 16:19:42,373 - INFO - Successfully opened https://shopee.sg
+2025-11-11 16:19:42,373 - INFO - Using provided cookies from device
+2025-11-11 16:19:42,373 - INFO - Successfully parsed cookies JSON string into list
+2025-11-11 16:19:42,390 - INFO - Added 29 cookies.
+2025-11-11 16:19:47,915 - INFO - Page reloaded successfully
+2025-11-11 16:19:54,941 - INFO - No popup found or error closing popup
+2025-11-11 16:20:43,681 - INFO - Simulated human behavior on home page
+2025-11-11 16:20:43,682 - INFO - Opening category page: https://shopee.sg/abc-cat.11011760.11027338?page=0&sortBy=sales
+2025-11-11 16:20:46,241 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11027338&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=0a19f2e4-00a6-492d-b79d-9739d292ece2
+2025-11-11 16:20:46,330 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11027338&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=0a19f2e4-00a6-492d-b79d-9739d292ece2
+2025-11-11 16:20:47,608 - INFO - Successfully opened https://shopee.sg/abc-cat.11011760.11027338?page=0&sortBy=sales
+2025-11-11 16:21:32,300 - INFO - Extracted 40 products from https://shopee.sg/abc-cat.11011760.11027338?page=0&sortBy=sales
+2025-11-11 16:21:32,300 - INFO - Opening category page: https://shopee.sg/abc-cat.11011760.11027338?page=1&sortBy=sales
+2025-11-11 16:21:34,308 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11027338&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=d7f22f90-139a-48b7-9966-56d627b8e3d4
+2025-11-11 16:21:34,322 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11027338&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=d7f22f90-139a-48b7-9966-56d627b8e3d4
+2025-11-11 16:21:34,903 - INFO - Successfully opened https://shopee.sg/abc-cat.11011760.11027338?page=1&sortBy=sales
+2025-11-11 16:21:41,185 - ERROR - Error processing API entry for https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11027338&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=d7f22f90-139a-48b7-9966-56d627b8e3d4: 'NoneType' object is not iterable
+2025-11-11 16:21:41,185 - WARNING - No products found for page: https://shopee.sg/abc-cat.11011760.11027338?page=1&sortBy=sales
+2025-11-11 16:21:41,185 - INFO - Opening category page: https://shopee.sg/abc-cat.11011760.11011852?page=0&sortBy=sales
+2025-11-11 16:21:43,064 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011852&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=9610bb74-5f81-4104-8896-af0dfcc54c09
+2025-11-11 16:21:43,086 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011852&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=9610bb74-5f81-4104-8896-af0dfcc54c09
+2025-11-11 16:21:44,107 - INFO - Successfully opened https://shopee.sg/abc-cat.11011760.11011852?page=0&sortBy=sales
+2025-11-11 16:21:49,455 - INFO - Extracted 40 products from https://shopee.sg/abc-cat.11011760.11011852?page=0&sortBy=sales
+2025-11-11 16:21:49,455 - INFO - Opening category page: https://shopee.sg/abc-cat.11011760.11011852?page=1&sortBy=sales
+2025-11-11 16:21:51,289 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011852&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=90e061b6-d345-4be4-ba40-cdc3ac831fe2
+2025-11-11 16:21:51,299 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011852&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=90e061b6-d345-4be4-ba40-cdc3ac831fe2
+2025-11-11 16:21:51,852 - INFO - Successfully opened https://shopee.sg/abc-cat.11011760.11011852?page=1&sortBy=sales
+2025-11-11 16:22:03,383 - ERROR - Error processing API entry for https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011852&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=90e061b6-d345-4be4-ba40-cdc3ac831fe2: 'NoneType' object is not iterable
+2025-11-11 16:22:03,383 - WARNING - No products found for page: https://shopee.sg/abc-cat.11011760.11011852?page=1&sortBy=sales
+2025-11-11 16:22:03,383 - INFO - Opening category page: https://shopee.sg/abc-cat.11011760.11011839?page=0&sortBy=sales
+2025-11-11 16:22:05,402 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011839&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=fec8ab2d-aa93-452b-99cd-3f7632bf04c7
+2025-11-11 16:22:05,418 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011839&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=fec8ab2d-aa93-452b-99cd-3f7632bf04c7
+2025-11-11 16:22:07,332 - INFO - Successfully opened https://shopee.sg/abc-cat.11011760.11011839?page=0&sortBy=sales
+2025-11-11 16:22:10,923 - INFO - Extracted 40 products from https://shopee.sg/abc-cat.11011760.11011839?page=0&sortBy=sales
+2025-11-11 16:22:10,923 - INFO - Opening category page: https://shopee.sg/abc-cat.11011760.11011839?page=1&sortBy=sales
+2025-11-11 16:22:12,855 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011839&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=87e3c101-7152-4cf9-8994-0480f654df41
+2025-11-11 16:22:12,869 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011839&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=87e3c101-7152-4cf9-8994-0480f654df41
+2025-11-11 16:22:13,387 - INFO - Successfully opened https://shopee.sg/abc-cat.11011760.11011839?page=1&sortBy=sales
+2025-11-11 16:23:24,852 - ERROR - Error processing API entry for https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011839&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=87e3c101-7152-4cf9-8994-0480f654df41: 'NoneType' object is not iterable
+2025-11-11 16:23:24,853 - WARNING - No products found for page: https://shopee.sg/abc-cat.11011760.11011839?page=1&sortBy=sales
+2025-11-11 16:23:24,853 - INFO - Opening category page: https://shopee.sg/abc-cat.11011760.11011822?page=0&sortBy=sales
+2025-11-11 16:23:27,321 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011822&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=5b880dff-8810-4d02-98d0-efad588ae0e5
+2025-11-11 16:23:27,342 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011822&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=5b880dff-8810-4d02-98d0-efad588ae0e5
+2025-11-11 16:23:28,465 - INFO - Successfully opened https://shopee.sg/abc-cat.11011760.11011822?page=0&sortBy=sales
+2025-11-11 16:23:37,285 - INFO - Extracted 40 products from https://shopee.sg/abc-cat.11011760.11011822?page=0&sortBy=sales
+2025-11-11 16:23:37,285 - INFO - Opening category page: https://shopee.sg/abc-cat.11011760.11011822?page=1&sortBy=sales
+2025-11-11 16:23:39,408 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011822&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=7e6b870f-f613-4306-bd7a-2aa2b78399a1
+2025-11-11 16:23:39,424 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011822&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=7e6b870f-f613-4306-bd7a-2aa2b78399a1
+2025-11-11 16:23:39,946 - INFO - Successfully opened https://shopee.sg/abc-cat.11011760.11011822?page=1&sortBy=sales
+2025-11-11 16:23:51,805 - ERROR - Error processing API entry for https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011822&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=7e6b870f-f613-4306-bd7a-2aa2b78399a1: 'NoneType' object is not iterable
+2025-11-11 16:23:51,805 - WARNING - No products found for page: https://shopee.sg/abc-cat.11011760.11011822?page=1&sortBy=sales
+2025-11-11 16:23:51,805 - INFO - Opening category page: https://shopee.sg/abc-cat.11011760.11011808?page=0&sortBy=sales
+2025-11-11 16:23:53,698 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011808&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=e636a189-d8f6-4f43-846a-f93c45432dd3
+2025-11-11 16:23:53,716 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011808&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=e636a189-d8f6-4f43-846a-f93c45432dd3
+2025-11-11 16:23:54,699 - INFO - Successfully opened https://shopee.sg/abc-cat.11011760.11011808?page=0&sortBy=sales
+2025-11-11 16:24:39,963 - INFO - Extracted 40 products from https://shopee.sg/abc-cat.11011760.11011808?page=0&sortBy=sales
+2025-11-11 16:24:39,963 - INFO - Opening category page: https://shopee.sg/abc-cat.11011760.11011808?page=1&sortBy=sales
+2025-11-11 16:24:42,274 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011808&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=17b26dc3-b68c-40a7-940e-284da6fd2d16
+2025-11-11 16:24:42,289 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011808&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=17b26dc3-b68c-40a7-940e-284da6fd2d16
+2025-11-11 16:24:42,800 - INFO - Successfully opened https://shopee.sg/abc-cat.11011760.11011808?page=1&sortBy=sales
+2025-11-11 16:24:48,235 - ERROR - Error processing API entry for https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011808&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=17b26dc3-b68c-40a7-940e-284da6fd2d16: 'NoneType' object is not iterable
+2025-11-11 16:24:48,236 - WARNING - No products found for page: https://shopee.sg/abc-cat.11011760.11011808?page=1&sortBy=sales
+2025-11-11 16:24:48,236 - INFO - Opening category page: https://shopee.sg/abc-cat.11011760.11011795?page=0&sortBy=sales
+2025-11-11 16:24:50,206 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011795&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=0493b621-f32b-49ab-ac62-fe24300d04d7
+2025-11-11 16:24:50,230 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011795&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=0493b621-f32b-49ab-ac62-fe24300d04d7
+2025-11-11 16:24:50,983 - INFO - Successfully opened https://shopee.sg/abc-cat.11011760.11011795?page=0&sortBy=sales
+2025-11-11 16:25:00,548 - INFO - Extracted 40 products from https://shopee.sg/abc-cat.11011760.11011795?page=0&sortBy=sales
+2025-11-11 16:25:00,548 - INFO - Opening category page: https://shopee.sg/abc-cat.11011760.11011795?page=1&sortBy=sales
+2025-11-11 16:25:02,327 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011795&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=e2ed9d46-9889-4588-8cb3-4a01920e3568
+2025-11-11 16:25:02,343 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011795&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=e2ed9d46-9889-4588-8cb3-4a01920e3568
+2025-11-11 16:25:02,922 - INFO - Successfully opened https://shopee.sg/abc-cat.11011760.11011795?page=1&sortBy=sales
+2025-11-11 16:25:15,522 - ERROR - Error processing API entry for https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11011795&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=e2ed9d46-9889-4588-8cb3-4a01920e3568: 'NoneType' object is not iterable
+2025-11-11 16:25:15,523 - WARNING - No products found for page: https://shopee.sg/abc-cat.11011760.11011795?page=1&sortBy=sales
+2025-11-11 16:25:15,523 - INFO - Opening category page: https://shopee.sg/abc-cat.11011760.11027373?page=0&sortBy=sales
+2025-11-11 16:25:17,659 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11027373&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=cbac8fd3-d9c9-4497-8780-584cbc941d39
+2025-11-11 16:25:17,741 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11027373&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=cbac8fd3-d9c9-4497-8780-584cbc941d39
+2025-11-11 16:25:18,733 - INFO - Successfully opened https://shopee.sg/abc-cat.11011760.11027373?page=0&sortBy=sales
+2025-11-11 16:25:55,946 - INFO - Extracted 40 products from https://shopee.sg/abc-cat.11011760.11027373?page=0&sortBy=sales
+2025-11-11 16:25:55,947 - INFO - Opening category page: https://shopee.sg/abc-cat.11011760.11027373?page=1&sortBy=sales
+2025-11-11 16:25:58,086 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11027373&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=b7b1a0ff-0dfb-4547-a9e2-e8957982c3ba
+2025-11-11 16:25:58,103 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11027373&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=b7b1a0ff-0dfb-4547-a9e2-e8957982c3ba
+2025-11-11 16:25:58,639 - INFO - Successfully opened https://shopee.sg/abc-cat.11011760.11027373?page=1&sortBy=sales
+2025-11-11 16:26:07,460 - ERROR - Error processing API entry for https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11027373&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=b7b1a0ff-0dfb-4547-a9e2-e8957982c3ba: 'NoneType' object is not iterable
+2025-11-11 16:26:07,460 - WARNING - No products found for page: https://shopee.sg/abc-cat.11011760.11027373?page=1&sortBy=sales
+2025-11-11 16:26:07,689 - ERROR - Error closing browser/context: Event loop is closed! Is Playwright already stopped?
+2025-11-11 16:31:01,300 - INFO - Using device 6 for parent_id 11013548
+2025-11-11 16:31:02,674 - INFO - Opening https://shopee.sg
+2025-11-11 16:31:06,835 - INFO - Successfully opened https://shopee.sg
+2025-11-11 16:31:06,835 - INFO - Using provided cookies from device
+2025-11-11 16:31:06,835 - INFO - Successfully parsed cookies JSON string into list
+2025-11-11 16:31:06,849 - INFO - Added 30 cookies.
+2025-11-11 16:31:09,044 - INFO - Page reloaded successfully
+2025-11-11 16:31:16,061 - INFO - No popup found or error closing popup
+2025-11-11 16:31:57,891 - INFO - Simulated human behavior on home page
+2025-11-11 16:31:57,891 - INFO - Opening category page: https://shopee.sg/abc-cat.11013548.11013588?page=0&sortBy=sales
+2025-11-11 16:32:01,696 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11013588&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=66cd042a-bea8-41bf-b494-2d9097a9af19
+2025-11-11 16:32:02,668 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11013588&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=66cd042a-bea8-41bf-b494-2d9097a9af19
+2025-11-11 16:32:04,255 - INFO - Successfully opened https://shopee.sg/abc-cat.11013548.11013588?page=0&sortBy=sales
+2025-11-11 16:32:12,783 - INFO - Extracted 40 products from https://shopee.sg/abc-cat.11013548.11013588?page=0&sortBy=sales
+2025-11-11 16:32:12,783 - INFO - Opening category page: https://shopee.sg/abc-cat.11013548.11013588?page=1&sortBy=sales
+2025-11-11 16:32:15,112 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11013588&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=50783e11-0322-480e-8b7e-f20460107f22
+2025-11-11 16:32:15,122 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11013588&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=50783e11-0322-480e-8b7e-f20460107f22
+2025-11-11 16:32:15,657 - INFO - Successfully opened https://shopee.sg/abc-cat.11013548.11013588?page=1&sortBy=sales
+2025-11-11 16:32:19,284 - ERROR - Error processing API entry for https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11013588&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=50783e11-0322-480e-8b7e-f20460107f22: 'NoneType' object is not iterable
+2025-11-11 16:32:19,284 - WARNING - No products found for page: https://shopee.sg/abc-cat.11013548.11013588?page=1&sortBy=sales
+2025-11-11 16:32:19,284 - INFO - Opening category page: https://shopee.sg/abc-cat.11013548.11013579?page=0&sortBy=sales
+2025-11-11 16:32:21,642 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11013579&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=31b072ef-4d3f-4d89-908b-8477363ffbd7
+2025-11-11 16:32:21,661 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11013579&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=31b072ef-4d3f-4d89-908b-8477363ffbd7
+2025-11-11 16:32:22,671 - INFO - Successfully opened https://shopee.sg/abc-cat.11013548.11013579?page=0&sortBy=sales
+2025-11-11 16:32:29,182 - INFO - Extracted 40 products from https://shopee.sg/abc-cat.11013548.11013579?page=0&sortBy=sales
+2025-11-11 16:32:29,182 - INFO - Opening category page: https://shopee.sg/abc-cat.11013548.11013579?page=1&sortBy=sales
+2025-11-11 16:32:31,135 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11013579&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=046e1b0f-f2e3-4367-a19b-861da08558e1
+2025-11-11 16:32:31,144 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11013579&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=046e1b0f-f2e3-4367-a19b-861da08558e1
+2025-11-11 16:32:31,669 - INFO - Successfully opened https://shopee.sg/abc-cat.11013548.11013579?page=1&sortBy=sales
+2025-11-11 16:33:10,061 - ERROR - Error processing API entry for https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11013579&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=046e1b0f-f2e3-4367-a19b-861da08558e1: 'NoneType' object is not iterable
+2025-11-11 16:33:10,062 - WARNING - No products found for page: https://shopee.sg/abc-cat.11013548.11013579?page=1&sortBy=sales
+2025-11-11 16:33:10,062 - INFO - Opening category page: https://shopee.sg/abc-cat.11013548.11013575?page=0&sortBy=sales
+2025-11-11 16:33:12,514 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11013575&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=262322db-5161-4bc7-a7f9-38172fba062a
+2025-11-11 16:33:12,533 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11013575&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=262322db-5161-4bc7-a7f9-38172fba062a
+2025-11-11 16:33:14,531 - INFO - Successfully opened https://shopee.sg/abc-cat.11013548.11013575?page=0&sortBy=sales
+2025-11-11 16:33:30,001 - INFO - Extracted 40 products from https://shopee.sg/abc-cat.11013548.11013575?page=0&sortBy=sales
+2025-11-11 16:33:30,002 - INFO - Opening category page: https://shopee.sg/abc-cat.11013548.11013575?page=1&sortBy=sales
+2025-11-11 16:33:32,991 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11013575&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=0624c115-9424-4ff7-88f8-c06b4b3154de
+2025-11-11 16:33:33,055 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11013575&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=0624c115-9424-4ff7-88f8-c06b4b3154de
+2025-11-11 16:33:34,279 - INFO - Successfully opened https://shopee.sg/abc-cat.11013548.11013575?page=1&sortBy=sales
+2025-11-11 16:33:36,965 - ERROR - Error processing API entry for https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11013575&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=0624c115-9424-4ff7-88f8-c06b4b3154de: 'NoneType' object is not iterable
+2025-11-11 16:33:36,965 - WARNING - No products found for page: https://shopee.sg/abc-cat.11013548.11013575?page=1&sortBy=sales
+2025-11-11 16:33:36,965 - INFO - Opening category page: https://shopee.sg/abc-cat.11013548.11013570?page=0&sortBy=sales
+2025-11-11 16:33:39,663 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11013570&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=1e200e94-79f3-40f3-bdea-696a4523684a
+2025-11-11 16:33:39,799 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11013570&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=1e200e94-79f3-40f3-bdea-696a4523684a
+2025-11-11 16:33:41,750 - INFO - Successfully opened https://shopee.sg/abc-cat.11013548.11013570?page=0&sortBy=sales
+2025-11-11 16:33:50,836 - INFO - Extracted 40 products from https://shopee.sg/abc-cat.11013548.11013570?page=0&sortBy=sales
+2025-11-11 16:33:50,836 - INFO - Opening category page: https://shopee.sg/abc-cat.11013548.11013570?page=1&sortBy=sales
+2025-11-11 16:33:52,650 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11013570&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=a8afa42b-ebc7-4f7e-b0c4-f09d7b8905d1
+2025-11-11 16:33:52,655 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11013570&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=a8afa42b-ebc7-4f7e-b0c4-f09d7b8905d1
+2025-11-11 16:33:53,202 - INFO - Successfully opened https://shopee.sg/abc-cat.11013548.11013570?page=1&sortBy=sales
+2025-11-11 16:34:00,816 - ERROR - Error processing API entry for https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11013570&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=a8afa42b-ebc7-4f7e-b0c4-f09d7b8905d1: 'NoneType' object is not iterable
+2025-11-11 16:34:00,816 - WARNING - No products found for page: https://shopee.sg/abc-cat.11013548.11013570?page=1&sortBy=sales
+2025-11-11 16:34:00,816 - INFO - Opening category page: https://shopee.sg/abc-cat.11013548.11013555?page=0&sortBy=sales
+2025-11-11 16:34:02,783 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11013555&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=6fa0398d-c24e-455f-a6ef-f2eaae563195
+2025-11-11 16:34:02,803 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11013555&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=6fa0398d-c24e-455f-a6ef-f2eaae563195
+2025-11-11 16:34:03,764 - INFO - Successfully opened https://shopee.sg/abc-cat.11013548.11013555?page=0&sortBy=sales
+2025-11-11 16:34:13,077 - INFO - Extracted 40 products from https://shopee.sg/abc-cat.11013548.11013555?page=0&sortBy=sales
+2025-11-11 16:34:13,077 - INFO - Opening category page: https://shopee.sg/abc-cat.11013548.11013555?page=1&sortBy=sales
+2025-11-11 16:34:14,977 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11013555&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=ed372427-ee63-4633-a2ac-2b0273b8553f
+2025-11-11 16:34:14,987 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11013555&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=ed372427-ee63-4633-a2ac-2b0273b8553f
+2025-11-11 16:34:15,499 - INFO - Successfully opened https://shopee.sg/abc-cat.11013548.11013555?page=1&sortBy=sales
+2025-11-11 16:34:27,718 - ERROR - Error processing API entry for https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11013555&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=ed372427-ee63-4633-a2ac-2b0273b8553f: 'NoneType' object is not iterable
+2025-11-11 16:34:27,718 - WARNING - No products found for page: https://shopee.sg/abc-cat.11013548.11013555?page=1&sortBy=sales
+2025-11-11 16:34:27,719 - INFO - Opening category page: https://shopee.sg/abc-cat.11013548.11013549?page=0&sortBy=sales
+2025-11-11 16:34:29,649 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11013549&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=275ea783-c338-487b-b7a0-c31698c0d355
+2025-11-11 16:34:29,669 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11013549&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=275ea783-c338-487b-b7a0-c31698c0d355
+2025-11-11 16:34:30,497 - INFO - Successfully opened https://shopee.sg/abc-cat.11013548.11013549?page=0&sortBy=sales
+2025-11-11 16:34:45,951 - INFO - Extracted 40 products from https://shopee.sg/abc-cat.11013548.11013549?page=0&sortBy=sales
+2025-11-11 16:34:45,951 - INFO - Opening category page: https://shopee.sg/abc-cat.11013548.11013549?page=1&sortBy=sales
+2025-11-11 16:34:48,309 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11013549&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=759104e0-c373-4b7a-8b6b-30e2c7f4c585
+2025-11-11 16:34:48,324 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11013549&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=759104e0-c373-4b7a-8b6b-30e2c7f4c585
+2025-11-11 16:34:48,842 - INFO - Successfully opened https://shopee.sg/abc-cat.11013548.11013549?page=1&sortBy=sales
+2025-11-11 16:35:20,786 - ERROR - Error processing API entry for https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11013549&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=759104e0-c373-4b7a-8b6b-30e2c7f4c585: 'NoneType' object is not iterable
+2025-11-11 16:35:20,786 - WARNING - No products found for page: https://shopee.sg/abc-cat.11013548.11013549?page=1&sortBy=sales
+2025-11-11 16:35:20,786 - INFO - Opening category page: https://shopee.sg/abc-cat.11013548.11027858?page=0&sortBy=sales
+2025-11-11 16:35:23,070 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11027858&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=9de2dd4a-9cf4-4201-8872-3d5e7a29a765
+2025-11-11 16:35:23,082 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11027858&newest=0&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=9de2dd4a-9cf4-4201-8872-3d5e7a29a765
+2025-11-11 16:35:24,062 - INFO - Successfully opened https://shopee.sg/abc-cat.11013548.11027858?page=0&sortBy=sales
+2025-11-11 16:35:33,143 - INFO - Extracted 40 products from https://shopee.sg/abc-cat.11013548.11027858?page=0&sortBy=sales
+2025-11-11 16:35:33,144 - INFO - Opening category page: https://shopee.sg/abc-cat.11013548.11027858?page=1&sortBy=sales
+2025-11-11 16:35:35,070 - INFO - Attempting to capture API response from: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11027858&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=d718a830-f6da-409c-a9b8-392f9dc5800f
+2025-11-11 16:35:35,078 - INFO - Successfully captured API: https://shopee.sg/api/v4/search/search_items?by=sales&limit=60&match_id=11027858&newest=60&order=desc&page_type=search&scenario=PAGE_CATEGORY&source=SRP&version=2&view_session_id=d718a830-f6da-409c-a9b8-392f9dc5800f
+2025-11-11 16:35:35,597 - INFO - Successfully opened https://shopee.sg/abc-cat.11013548.11027858?page=1&sortBy=sales

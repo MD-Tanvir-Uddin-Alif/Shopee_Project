@@ -6,3 +6,4 @@ playwright==1.55.0
 logging==0.4.9.6
 dotenv==0.9.9
 alembic==1.171
+tzdata==2025.2

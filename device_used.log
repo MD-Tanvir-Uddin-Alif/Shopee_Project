@@ -271,3 +271,16 @@
 2025-11-11 17:21:19,815 - WARNING - No available devices for parent_id 11013478. Skipping.
 2025-11-11 17:21:19,816 - WARNING - No available devices for parent_id 11012018. Skipping.
 2025-11-11 17:21:19,817 - WARNING - No available devices for parent_id 11011760. Skipping.
+2025-11-12 11:38:49,762 - INFO - Opening https://shopee.sg
+2025-11-12 11:38:56,977 - INFO - Successfully opened https://shopee.sg
+2025-11-12 11:38:56,977 - INFO - Using provided cookies from device
+2025-11-12 11:38:56,978 - WARNING - No valid cookies added to the context.
+2025-11-12 11:38:59,282 - INFO - Page reloaded successfully
+2025-11-12 11:39:06,337 - INFO - No popup found or error closing popup
+2025-11-12 11:39:46,916 - INFO - Simulated human behavior on home page
+2025-11-12 11:39:46,916 - INFO - Opening product page: https://shopee.sg/product/1049876479/20885956400
+2025-11-12 11:39:50,126 - INFO - Successfully opened https://shopee.sg/product/1049876479/20885956400
+2025-11-12 11:39:58,733 - WARNING - No product found for: https://shopee.sg/product/1049876479/20885956400
+2025-11-12 11:39:58,733 - WARNING - No API requests captured for 'item/get'.
+2025-11-12 11:39:58,733 - ERROR - Error logging network requests: 'BrowserContext' object has no attribute 'requests'
+2025-11-12 11:39:58,912 - ERROR - Error closing browser/context: Event loop is closed! Is Playwright already stopped?

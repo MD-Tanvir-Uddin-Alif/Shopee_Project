@@ -27,7 +27,7 @@ from models import ProductChildCategoryModel, ProductMainCategoryModel, ProductM
 from schema import DeviceUpdate
 from scrape_all_category import Category_Scraper
 from category_base_product_scrape import Product_Scrape_by_Category
-
+from scrape_product_details import scrape_shopee_product_details
 
 Base.metadata.create_all(bind=engine)
 
@@ -187,7 +187,18 @@ def trigger_category_scrape(db: Session = Depends(get_db)):
 
 #------------------------------------
 # Manually reset a single device
-#-------------------------------------
+#------------------------------------
+@app.post('/product/{shopId}/{productId}/')
+def product_details(shopId: int, productId: int, db: Session=Depends(get_db)):
+    details = scrape_shopee_product_details(shopId, productId)
+    return details
+
+
+
+
+#------------------------------------
+# Manually reset a single device
+#------------------------------------
 @app.post('/reset-device/{device_id}')
 def reset_single_device(device_id: int, db: Session = Depends(get_db)):
     
@@ -262,9 +273,6 @@ def add_device_info(device_name: str , email: str, password: str, cookies: dict 
     db.commit()
     db.refresh(new_device)
     return {'message':"new device added", 'data':new_device}
-
-
-
 
 
 #------------------------------------

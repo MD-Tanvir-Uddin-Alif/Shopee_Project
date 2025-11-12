@@ -90,7 +90,7 @@ def scrape_shopee_product_details(shop_id: int, product_id: int, cookies_json: l
             def capture_response(response):
                 """Capture Shopee API JSON responses"""
                 try:
-                    if "shopee.sg/api/v4/item/get" in response.url:
+                    if "/get_pc?item_id=" in response.url:
                         logging.info(f"Attempting to capture API response from: {response.url}")
                         try:
                             # Try parsing JSON body directly

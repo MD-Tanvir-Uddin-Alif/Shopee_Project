@@ -3,6 +3,7 @@
 #----------------------------------------
 from databse_config import Base, engine, get_db
 from fastapi import FastAPI, Depends, status, Body, HTTPException
+from sqlalchemy import asc
 from fastapi.responses import JSONResponse
 from sqlalchemy.orm import Session
 from datetime import datetime, UTC
@@ -186,13 +187,35 @@ def trigger_category_scrape(db: Session = Depends(get_db)):
 
 
 #------------------------------------
-# Manually reset a single device
+# Product details scrape
 #------------------------------------
 @app.post('/product/{shopId}/{productId}/')
 def product_details(shopId: int, productId: int, db: Session=Depends(get_db)):
-    details = scrape_shopee_product_details(shopId, productId)
-    return details
-
+    # Query for a suitable device: not failed, sorted by fewest attempts
+    device = db.query(DeviceModel).filter(DeviceModel.is_faild == False).order_by(asc(DeviceModel.number_of_attemps)).first()
+    
+    if not device:
+        raise HTTPException(status_code=500, detail="No available device found")
+    
+    # Increment attempts and update the device (optional, but good for rotation logic)
+    device.number_of_attemps += 1
+    db.commit()
+    db.refresh(device)
+    
+    # Pass the cookies (assuming they are a list of dicts in JSON format)
+    cookies_json = device.cookies or []  # Default to empty list if None
+    
+    # Call the scraper with cookies
+    product_data = scrape_shopee_product_details(shopId, productId, cookies_json=cookies_json)
+    
+    if not product_data:
+        # Optional: Mark device as failed if scrape fails (add your logic here)
+        device.is_faild = True
+        device.failed_time = datetime.now(UTC)
+        db.commit()
+        raise HTTPException(status_code=500, detail="Scraping failed")
+    
+    return product_data
 
 
 
